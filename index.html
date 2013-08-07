@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<section class="lead">
+	<h1>Welcome to StormBit</h1>
+	<p>Cupcake ipsum dolor sit amet chupa chups fruitcake candy canes. Dessert chocolate I love gingerbread. I love macaroon tiramisu pudding cake chocolate bar marshmallow. Gummies sweet cookie danish. Candy dragée icing marshmallow. Soufflé ice cream oat cake. Candy sweet I love pastry sesame snaps pastry jelly candy canes. Dragée I love pastry muffin caramels. Apple pie tart I love halvah jelly candy applicake fruitcake. Gingerbread applicake carrot cake. Candy sweet gummies. Tootsie roll sweet roll I love gummies ice cream. Icing cupcake pudding cake I love marzipan jelly. Chocolate bar fruitcake jujubes.</p>
+</section>
+<section class="news"><ul>
+{% for post in site.posts %}
+	<li><article>
+		<header>
+			<h1><a href=".{{ post.url }}">{{ post.title }}</a></h1>
+			<address class="author">by <img src="avatars/nekoflan.jpg"><a rel="author">Alex Wilson</a></address>
+			<time datetime="2013-05-12 09:29">{{ post.date | date_to_string }}</time>
+		</header>
+		<blockquote>{{ post.excerpt }}</blockquote>
+	</article></li>
+{% endfor %}
+</ul></section>

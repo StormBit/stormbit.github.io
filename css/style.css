@@ -1,0 +1,159 @@
+/**
+ * GLOBAL
+ */
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+body {
+	background: url(../img/bg.png);
+}
+img {
+	vertical-align: middle;
+}
+
+/**
+ * GLOBAL ELEMENTS
+ */
+.author {
+}
+.author img {
+	max-width: 20px;
+	max-height: 20px;
+	border-radius: 3px;
+	margin: 0 5px;
+}
+
+/**
+ * HEADER
+ */
+.navbar, .footer {
+	width: 100%;
+	background: hsl(0, 0%, 10%);
+	overflow: hidden;
+//	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+	position: relative;
+}
+.navbar {
+	position: absolute;
+}
+.navbar .container,
+.footer .container {
+	padding: 0;
+	background: none;
+}
+.navbar img {
+	border-color: hsl(0, 0%, 15%);
+	border-width: 0 1px;
+	border-style: solid;
+	display: block;
+}
+.navbar a {
+	display: block;
+	float: left;
+	text-decoration: none;
+	color: hsl(0, 0%, 80%);
+	font-size: 14px;
+	text-align: center;
+	height: 40px;
+	min-width: 80px;
+	transition: background-color .25s, height .5s;
+}
+.navbar a:hover {
+	background-color: hsl(0, 0%, 15%);
+}
+.navbar nav {
+	float: right;
+}
+.navbar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.navbar ul li {
+	display: block;
+	float: left;
+	border-left: 1px solid hsl(0, 0%, 15%);
+}
+.navbar ul li:last-child {
+	border-right: 1px solid hsl(0, 0%, 15%);
+}
+.navbar ul li a {
+	padding-top: 10px;
+}
+
+/**
+ * NEWS
+ */
+.news ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/**
+ * FOOTER
+ */
+.footer {
+	color: white;
+	margin-top: -200px;
+	height: 200px;
+}
+.footer h1 {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.footer nav ul {
+	list-style: none;
+	margin-left: 50px;
+}
+.footer nav ul ul {
+	padding: 0;
+	margin: 0 0 0 10px;
+}
+.footer nav > ul > li {
+	width: 30%;
+	float: left;
+}
+.footer a {
+	color: hsl(0, 0%, 80%);
+	text-decoration: none;
+	transition: color 0.25s;
+}
+.footer a:hover {
+	color: hsl(0, 0%, 98%);
+}
+.footer li {
+	padding: 0;
+	margin: 3px 0;
+}
+.footer .copyright {
+	clear: both;
+	text-align: center;
+	padding: 10px;
+	color: hsl(0, 0%, 50%);
+}
+
+/**
+ * CONTAINER
+ */
+.container {
+	width: 100%;
+	max-width: 1024px;
+	background: white;
+	margin: 0 auto;
+	padding: 10px 30px;
+	transition: padding .5s;
+}
+#page {
+	box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+	padding-bottom: 200px;
+	min-height: 100%;
+	padding-top: 40px;
+}
