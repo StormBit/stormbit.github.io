@@ -8,11 +8,17 @@ layout: default
 </section>
 <section class="news"><ul>
 {% for post in site.posts %}
+	{% assign author = site.people[post.author] %}
 	<li><article>
 		<header>
 			<h1><a href=".{{ post.url }}">{{ post.title }}</a></h1>
-			<address class="author">by <img src="avatars/nekoflan.jpg"><a rel="author">Alex Wilson</a></address>
-			<time datetime="2013-05-12 09:29">{{ post.date | date_to_string }}</time>
+			<a rel="author" href="#">
+				<address class="person">
+					<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?r=r&s=40&">
+					{{ author.name }}
+				</address>
+			</a>
+			<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %b %Y' }}</time>
 		</header>
 		<blockquote>{{ post.excerpt }}</blockquote>
 	</article></li>

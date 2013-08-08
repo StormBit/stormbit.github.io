@@ -1,9 +1,17 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
-</div>
+{% assign author = site.people[page.author] %}
+<article>
+	<header>
+		<h1><a href=".{{ page.url }}">{{ page.title }}</a></h1>
+		<a rel="author" href="#">
+			<address class="person">
+				<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?r=r&s=40&">
+				{{ author.name }}
+			</address>
+		</a>
+		<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d %b %Y @ %H:%M' }}</time>
+	</header>
+	{{ content }}
+</article>
