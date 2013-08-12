@@ -11,6 +11,7 @@ people:
   antoligy:
     name: Alex Wilson
     email: alex.w@stormbit.net
+    nick: nekoflan
     website: http://antoligy.com/
     twitter: antoligy
     gravatar: a38b4c49423da71c55cec5b9482a682f
@@ -20,6 +21,7 @@ people:
     name: Lucy Firman
     email: lucy.f@stormbit.net
     website: http://countbisqu.it/
+    nick: lucy
     twitter: mikotohe2
     gravatar: 32704faf83d4752c5cec2e918557409b
     location: Essex, England
@@ -27,6 +29,7 @@ people:
   reimuhakurei:
     name: Alex Ingram
     email: alex.i@stormbit.net
+    nick: reimuhakurei
     website: http://reimuhakurei.net/
     twitter: kudo147
     gravatar:
