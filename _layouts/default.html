@@ -2,30 +2,28 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<base href="http://melchior.plejeck.com/~plejeck/stormbit-jekyll/">
 	<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.name }}</title>
-	<link rel="canonical" href="http://stormbit.net/">
 	<meta name="description" content="StormBit Community">
-	<link rel="stylesheet/less" type="text/css" href="css/style.less">
-<script type="text/javascript">
-less = {
-	env: "development",
-	poll: 1000,
-//	dumpLineNumbers: "all",
-};
-</script>
-	<script src="css/less.js"></script>
+	<link rel="stylesheet/less" type="text/css" href="{{ site.base }}/css/style.less">
+	<script type="text/javascript">
+	less = {
+		env: "development",
+		poll: 1000,
+	//	dumpLineNumbers: "all",
+	};
+	</script>
+	<script src="{{ site.base }}/css/less.js"></script>
 </head>
 <body>
 	<div id="topbar" class="navbar">
 		<div class="container">
-			<a href="/"><img src="img/logo.svg" height=50 alt="{{ site.name }}"></a>
+			<a href="/"><img src="{{ site.base }}/img/logo.svg" height=50 alt="{{ site.name }}"></a>
 		<nav><ul>
 			<li><a href="//iris.stormbit.net/">Chat</a></li>
 			<li><a href="//forums.stormbit.net">Forum</a></li>
-			<li><a href="help/">Help</a></li>
-			<li><a href="about/">About</a></li>
+			<li><a href="{{ site.base }}/help/">Help</a></li>
+			<li><a href="{{ site.base }}/about/">About</a></li>
 		</ul></nav>
 		</div>
 	</div>
@@ -36,15 +34,15 @@ less = {
 		<div class="container">
 			<nav><ul>
 				<li><h1>About</h1><ul>
-					<li><a href="about/people.html">People</a></li>
-					<li><a href="about/policies.html">Policies</a></li>
-					<li><a href="help/">Help</a></li>
+					<li><a href="{{ site.base }}/about/people.html">People</a></li>
+					<li><a href="{{ site.base }}/about/policies.html">Policies</a></li>
+					<li><a href="{{ site.base }}/help/">Help</a></li>
 					<li><a href="//status.stormbit.net">Status</a></li>
 				</ul></li>
 				<li><h1>IRC</h1><ul>
 					<li><a href="#">Web Chat</a></li>
-					<li><a href="#">Connection Info</a></li>
-					<li><a href="#">Services</a></li>
+					<li><a href="{{ site.base }}/help/connect.html">Connection Info</a></li>
+					<li><a href="{{ site.base }}/help/services.html">Services</a></li>
 				</ul></li>
 				<li><h1>Forums</h1><ul>
 					<li><a href="#">Video Games</a></li>
