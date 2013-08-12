@@ -12,12 +12,7 @@ layout: default
 	<li><article>
 		<header>
 			<h1><a href=".{{ post.url }}">{{ post.title }}</a></h1>
-			<a rel="author" href="#">
-				<address class="person">
-					<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?r=r&s=40&">
-					{{ author.name }}
-				</address>
-			</a>
+			{% include person.html person=post.author size="small" %}
 			<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %b %Y' }}</time>
 		</header>
 		<blockquote>{{ post.excerpt }}</blockquote>

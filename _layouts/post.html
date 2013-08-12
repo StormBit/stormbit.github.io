@@ -5,12 +5,7 @@ layout: default
 <article>
 	<header>
 		<h1><a href=".{{ page.url }}">{{ page.title }}</a></h1>
-		<a rel="author" href="#">
-			<address class="person">
-				<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?r=r&s=40&">
-				{{ author.name }}
-			</address>
-		</a>
+		{% include person.html person=page.author size="big" %}
 		<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d %b %Y @ %H:%M' }}</time>
 	</header>
 	{{ content }}
