@@ -1,0 +1,11 @@
+/* M+ 1p Light */
+@font-face {
+    font-family: 'M+ 1p';
+    src: url('mplus-1p-light.eot');
+    src: url('mplus-1p-light.eot?#iefix') format('embedded-opentype'),
+         url('mplus-1p-light.woff') format('woff'),
+         url('mplus-1p-light.ttf') format('truetype'),
+         url('mplus-1p-light.svg#m_1plight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
