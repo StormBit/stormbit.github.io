@@ -1,0 +1,41 @@
+/***********************************************/
+/****************** CSS RESET ******************/
+/***********************************************/
+
+@import url("settings.less");
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+	.text();
+	background: @background;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	.head(0);
+}
+
+h1 { .head(1); }
+h2 { .head(2); }
+h3 { .head(3); }
+h4 { .head(4); }
+h5 { .head(5); }
+h6 { .head(6); }
+
+p {
+	margin-bottom: @line-height;
+}
+

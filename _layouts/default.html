@@ -7,9 +7,15 @@
 	<title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.name }}</title>
 	<link rel="canonical" href="http://stormbit.net/">
 	<meta name="description" content="StormBit Community">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" media="screen and (max-width: 450px)" href="css/mobile.css" />
+	<link rel="stylesheet/less" type="text/css" href="css/style.less">
+<script type="text/javascript">
+less = {
+	env: "development",
+	poll: 1000,
+//	dumpLineNumbers: "all",
+};
+</script>
+	<script src="css/less.js"></script>
 </head>
 <body>
 	<div id="topbar" class="navbar">

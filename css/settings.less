@@ -1,0 +1,53 @@
+@base: "..";
+@line-height: 20px;
+@font-size: 16px;
+@background: url("@{base}/img/bg.png");
+
+@import url("../../mplus/mplus-1p-light.css");
+@import url("../../mplus/mplus-1p-regular.css");
+@import url("../../mplus/mplus-1p-bold.css");
+
+@grid-columns: 12;
+@grid-margins: 1%;
+
+.text () {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: @font-size;
+	line-height: @line-height;
+	font-weight: 300;
+	color: hsl(0, 0%, 20%);
+}
+.head (0) {
+	font-family: 'M+ 1p', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+.head (@level) {
+	@size: round((36px - 3px * @level), 2);
+	font-size: @size;
+	line-height: (ceil(@size / @line-height) * @line-height);
+}
+.columns-container () {
+	width: 100%;
+	max-width: 1024px;
+}
+.columns (@cols: 1, @margins: @grid-margins) {
+	width: round(((@cols / @grid-columns) * 100% - @margins), 2);
+	margin: 0px (@margins / 2);
+	padding: 0 0.5em;
+}
+
+.seethrough (@lum, @alpha) {
+	background: -moz-linear-gradient(top, hsla(0, 0%, @lum, @alpha) 0%,
+	                                      hsla(0, 0%, @lum, @alpha) 100%),
+	            @background;
+	background: -webkit-linear-gradient(top, hsla(0, 0%, @lum, @alpha) 0%,
+	                                         hsla(0, 0%, @lum, @alpha) 100%),
+	            @background;
+	background: -ms-linear-gradient(top, hsla(0, 0%, @lum, @alpha) 0%,
+	                                     hsla(0, 0%, @lum, @alpha) 100%),
+	            @background;
+	background: linear-gradient(to bottom, hsla(0, 0%, @lum, @alpha) 0%,
+	                                       hsla(0, 0%, @lum, @alpha) 100%),
+	            @background;
+
+}
