@@ -1,0 +1,46 @@
+/***********************************************/
+/************** FRONT PAGE STYLES **************/
+/***********************************************/
+
+/**
+ * NEWS SECTION
+ */
+section.news {
+	ul {
+		list-style: none;
+	}
+	h1 {
+		display: block;
+	}
+	time {
+		display: inline;
+		color: hsl(0, 0%, 50%);
+	}
+	address.person {
+		display: inline;
+
+		img {
+			display: none;
+		}
+	}
+	blockquote {
+		margin-top: 20px;
+	}
+}
+
+/**
+ * TWITTER BOX
+ */
+section.twitter {
+	float: right;
+	.columns(6);
+	padding: @line-height;
+	background-color: black;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: @line-height;
+	margin-bottom: @line-height;
+	.seethrough(20%, 0.5);
+	iframe {
+		display: block;
+	}
+}

@@ -1,0 +1,38 @@
+name: StormBit IRC Network
+description: STRONKBITCH
+keywords: MIKOTOHE2, LIKES, DICKS.
+
+base: http://stormbit.net/
+
+permalink: /:year/:month/:day/:title.html
+
+markdown: redcarpet
+pygments: false
+
+people:
+  antoligy:
+    name: Alex Wilson
+    email: alex.w@stormbit.net
+    nick: nekoflan
+    website: http://antoligy.com/
+    twitter: antoligy
+    gravatar: a38b4c49423da71c55cec5b9482a682f
+    location: West Midlands, England
+    role: Senior Network Adminstrator
+  mikotohe2:
+    name: Lucy Firman
+    email: lucy.f@stormbit.net
+    nick: lucy
+    twitter: mikotohe2
+    gravatar: 32704faf83d4752c5cec2e918557409b
+    location: Essex, England
+    role: Network Officer
+  reimuhakurei:
+    name: Alex Ingram
+    email: alex.i@stormbit.net
+    nick: reimuhakurei
+    website: http://reimuhakurei.net/
+    twitter: kudo147
+    gravatar:
+    location: Indiana, USA
+    role: Senior Network Administrator
