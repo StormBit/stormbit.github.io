@@ -10,9 +10,9 @@
   "author": "Stormbit IRC Network (http://stormbit.net/)",
   "contributors": [
     "Peter Lejeck <me@plejeck.com> (http://plejeck.com/)",
-	 "Alex Wilson",
-	 "Lucy Firman",
-	 "Alex Ingram"
+	 "Alex Wilson <alex.w@stormbit.net>",
+	 "Lucy Firman <lucy.f@stormbit.net>",
+	 "Alex Ingram <alex.i@stormbit.net>"
   ],
   "license": "MIT",
   "bugs": {
