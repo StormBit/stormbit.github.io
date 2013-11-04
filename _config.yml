@@ -6,6 +6,8 @@ base: http://stormbit.net/
 
 permalink: /:year/:month/:day/:title.html
 
+encoding: UTF-8
+
 markdown: redcarpet
 pygments: false
 
