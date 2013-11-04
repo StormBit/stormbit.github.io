@@ -1,0 +1,25 @@
+{
+  "name": "stormbit",
+  "version": "1.0.0",
+  "description": "Stormbit blog",
+  "homepage": "http://stormbit.net/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StormBit/stormbit.github.io.git"
+  },
+  "author": "Stormbit IRC Network (http://stormbit.net/)",
+  "contributors": [
+    "Peter Lejeck <me@plejeck.com> (http://plejeck.com/)",
+	 "Alex Wilson",
+	 "Lucy Firman",
+	 "Alex Ingram"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StormBit/stormbit.github.io/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "~0.8.1"
+  }
+}
