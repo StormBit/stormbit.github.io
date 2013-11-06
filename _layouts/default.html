@@ -6,6 +6,10 @@
 	<title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.name }}</title>
 	<meta name="description" content="StormBit Community">
 	<link rel="stylesheet" type="text/css" href="{{ site.base }}css/style.css">
+	{% if site.env == 'development' %}
+	<link rel="stylesheet" type="text/css" href="{{ site.base }}css/dev-grid.css">
+	<script id="dev_grid-toggle" src="{{ site.base }}css/dev-grid.js"></script>
+	{% endif %}
 </head>
 <body>
 	<div id="topbar" class="navbar">

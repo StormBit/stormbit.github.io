@@ -1,5 +1,8 @@
-.show-grid #page, .show-grid .footer {
-	background-image: url("@{base}/img/baseline.png");
+@import url("settings.less");
+
+.show-grid .inner, .show-grid .footer, .show-grid .lead {
+	background-image: repeating-linear-gradient(to top, blue 0, transparent 1px, transparent @line-height);
+//	background-image: url("@{base}/img/baseline.png");
 }
 
 #dev_grid-toggle {
@@ -31,8 +34,12 @@
 	position: fixed;
 	left: 0;
 	right: 0;
+	top: 0;
+	bottom: 0;
 	padding: 0 @line-height;
-	.dev_grid-col {
+	z-index: 5000;
+
+	div {
 		.columns(1);
 		border-right: 1px solid red;
 		border-left: 1px solid red;
@@ -49,7 +56,7 @@
 		margin: -1px;
 		padding: 0;
 	}
-	.dev_grid-col:first-child {
+	div:first-child {
 		border-left: 1px solid red;
 	}
 }
