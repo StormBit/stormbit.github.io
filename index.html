@@ -2,16 +2,20 @@
 layout: default
 ---
 
+{% if paginator.page == 1 %}
 <section class="lead">
 	<h1>Welcome to StormBit</h1>
 	<a href="//webchat.{{ site.tld }}" class="chat-now">Chat Now</a>
 	<p>Cupcake ipsum dolor sit amet chupa chups fruitcake candy canes. Dessert chocolate I love gingerbread. I love macaroon tiramisu pudding cake chocolate bar marshmallow. Gummies sweet cookie danish. Candy dragée icing marshmallow. Soufflé ice cream oat cake. Candy sweet I love pastry sesame snaps pastry jelly candy canes. Dragée I love pastry muffin caramels. Apple pie tart I love halvah jelly candy applicake fruitcake. Gingerbread applicake carrot cake. Candy sweet gummies. Tootsie roll sweet roll I love gummies ice cream. Icing cupcake pudding cake I love marzipan jelly. Chocolate bar fruitcake jujubes.</p>
 </section>
+{% endif %}
 <div class="inner">
+	{% if paginator.page == 1 %}
 	<section class="twitter">
 		<a class="twitter-timeline" href="https://twitter.com/StormBit" data-widget-id="364142013383311360"  data-chrome="nofooter transparent" height="auto">Tweets by @StormBit</a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</section>
+	{% endif %}
 	<section class="news"><ul>
 	{% for post in site.posts %}
 		{% assign author = site.people[post.author] %}
