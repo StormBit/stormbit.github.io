@@ -34,18 +34,18 @@
 	padding-right: 0.5em;
 }
 
-.seethrough (@lum, @alpha) {
-	background: -moz-linear-gradient(top, hsla(0, 0%, @lum, @alpha) 0%,
-	                                      hsla(0, 0%, @lum, @alpha) 100%),
+.seethrough (@lum, @alphatop, @alphabottom) {
+	background: -moz-linear-gradient(top, hsla(0, 0%, @lum, @alphatop) 0%,
+	                                      hsla(0, 0%, @lum, @alphabottom) 100%),
 	            @background;
-	background: -webkit-linear-gradient(top, hsla(0, 0%, @lum, @alpha) 0%,
-	                                         hsla(0, 0%, @lum, @alpha) 100%),
+	background: -webkit-linear-gradient(top, hsla(0, 0%, @lum, @alphatop) 0%,
+	                                         hsla(0, 0%, @lum, @alphabottom) 100%),
 	            @background;
-	background: -ms-linear-gradient(top, hsla(0, 0%, @lum, @alpha) 0%,
-	                                     hsla(0, 0%, @lum, @alpha) 100%),
+	background: -ms-linear-gradient(top, hsla(0, 0%, @lum, @alphatop) 0%,
+	                                     hsla(0, 0%, @lum, @alphabottom) 100%),
 	            @background;
-	background: linear-gradient(to bottom, hsla(0, 0%, @lum, @alpha) 0%,
-	                                       hsla(0, 0%, @lum, @alpha) 100%),
+	background: linear-gradient(to bottom, hsla(0, 0%, @lum, @alphatop) 0%,
+	                                       hsla(0, 0%, @lum, @alphabottom) 100%),
 	            @background;
 
 }
