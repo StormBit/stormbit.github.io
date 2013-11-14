@@ -2,17 +2,22 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		less: {
-			files: {
-				'css/index.less': 'css/index.css'
-			},
 			development: {
 				options: {
 					strictMath: true,
 					strictUnits: true,
-					strictImports: true
+					strictImports: true,
+					sourceMap: true
+				},
+				files: {
+					'css/style.css': 'css/style.less',
+					'css/dev-grid.css': 'css/dev-grid.less'
 				}
 			},
 			production: {
+				files: {
+					'css/style.css': 'css/style.less'
+				},
 				options: {
 					cleancss: true,
 					sourceMap: true
