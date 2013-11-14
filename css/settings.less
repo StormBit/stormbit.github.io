@@ -28,8 +28,10 @@
 }
 .columns (@cols: 1, @margins: @grid-margins) {
 	width: round(((@cols / @grid-columns) * 100% - @margins), 2);
-	margin: 0px (@margins / 2);
-	padding: 0 0.5em;
+	margin-left: (@margins / 2);
+	margin-right: (@margins / 2);
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 }
 
 .seethrough (@lum, @alpha) {
