@@ -2,6 +2,9 @@ name: StormBit IRC Network
 description: STRONKBITCH
 keywords: MIKOTOHE2, LIKES, DICKS.
 
+paginate: 3,
+paginate_path: "page:num"
+
 base: http://stormbit.net/
 tld: stormbit.net
 
