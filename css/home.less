@@ -26,16 +26,18 @@ section.lead {
 		text-align: center;
 		padding: @line-height 0;
 		border-radius: 4px;
-		box-shadow: 0px 2px 10px -5px hsla(0, 0%, 100%, 0.8) inset;
 		font-family: 'M+ 1p';
-		color: hsl(0, 0%, 10%);
-		text-shadow: 0px 1px 0px hsla(0, 0%, 70%, 0.9);
+		color: hsl(0, 0%, 0%);
 		text-transform: uppercase;
 		font-weight: 400;
 		.columns(2);
-		.seethrough(80%, 0.7, 0.5);
 		margin-left: @line-height;
-		background-origin: border-box;
+		background-color: hsl(0, 0%, 70%);
+		transition: background .25s;
+		min-width: 125px;
+	}
+	.chat-now:hover {
+		background-color: hsl(0, 0%, 85%);
 	}
 	.chat-now:after {
 		content: "\203a";
