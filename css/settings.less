@@ -47,5 +47,8 @@
 	background: linear-gradient(to bottom, hsla(0, 0%, @lum, @alphatop) 0%,
 	                                       hsla(0, 0%, @lum, @alphabottom) 100%),
 	            @background;
+}
 
+.seethrough (@lum, @alpha) {
+	.seethrough(@lum, @alpha, @alpha);
 }
