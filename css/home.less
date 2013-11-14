@@ -1,6 +1,48 @@
 /***********************************************/
 /************** FRONT PAGE STYLES **************/
 /***********************************************/
+@import url("settings.less");
+
+/**
+ * LEAD SECTION
+ */
+section.lead {
+	font-size: 17px;
+	margin-top: 50px;
+	margin-bottom: @line-height;
+	padding: @line-height;
+	background-color: hsl(0, 0%, 10%);
+	border-top: 1px solid #262626;
+	color: white;
+
+	h1, p {
+		.columns(12);
+		padding: 0 0 0 @line-height;
+	}
+	.chat-now {
+		height: (@line-height * 3);
+		margin-bottom: @line-height;
+		float: right;
+		text-align: center;
+		padding: @line-height 0;
+		border-radius: 4px;
+		box-shadow: 0px 2px 10px -5px hsla(0, 0%, 100%, 0.8) inset;
+		font-family: 'M+ 1p';
+		color: hsl(0, 0%, 10%);
+		text-shadow: 0px 1px 0px hsla(0, 0%, 70%, 0.9);
+		text-transform: uppercase;
+		font-weight: 400;
+		.columns(2);
+		.seethrough(80%, 0.7, 0.5);
+		margin-left: @line-height;
+		background-origin: border-box;
+	}
+	.chat-now:after {
+		content: "\203a";
+		font-size: 20px;
+		margin-left: 3px;
+	}
+}
 
 /**
  * NEWS SECTION
