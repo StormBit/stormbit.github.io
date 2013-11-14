@@ -19,13 +19,17 @@ layout: default
 	<section class="news"><ul>
 	{% for post in paginator.posts %}
 		{% assign author = site.people[post.author] %}
-		<li><article>
+		<li><article{% if forloop.first and paginator.page == 1 %} class="sticky"{% endif %}>
 			<header>
 				<h1><a href=".{{ post.url }}">{{ post.title }}</a></h1>
 				{% include person.html person=post.author size="small" %}
 				<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %b %Y' }}</time>
 			</header>
+			{% if forloop.first and paginator.page == 1 %}
+			<blockquote>{{ post.content }}</blockquote>
+			{% else %}
 			<blockquote>{{ post.excerpt }}</blockquote>
+			{% endif %}
 		</article></li>
 	{% endfor %}
 	{% if paginator.total_pages > 1 %}
