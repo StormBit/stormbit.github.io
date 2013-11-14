@@ -12,6 +12,7 @@ encoding: UTF-8
 markdown: redcarpet
 pygments: false
 
+# if you change the indents here, also fix it in the Rakefile!
 people:
   antoligy:
     name: Alex Wilson
