@@ -17,7 +17,7 @@ layout: default
 	</section>
 	{% endif %}
 	<section class="news"><ul>
-	{% for post in site.posts %}
+	{% for post in paginator.posts %}
 		{% assign author = site.people[post.author] %}
 		<li><article>
 			<header>
@@ -28,5 +28,13 @@ layout: default
 			<blockquote>{{ post.excerpt }}</blockquote>
 		</article></li>
 	{% endfor %}
+	{% if paginator.total_pages > 1 %}
+	{% if paginator.previous_page %}
+		<a href="{{ paginator.previous_page_path | prepend: site.base | replace: '//', '/' }}" class="page-newer">Newer</a>
+	{% endif %}
+	{% if paginator.next_page %}
+		<a href="{{ paginator.next_page_path | prepend: site.base | replace: '//', '/' }}" class="page-older">Older</a>
+	{% endif %}
+	{% endif %}
 	</ul></section>
 </div>
