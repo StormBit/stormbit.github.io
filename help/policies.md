@@ -4,7 +4,7 @@ title: Network Policy
 ---
 
 # StormBit Network Policy
-## Revision 4 - 9th of October 2013.
+## Revision 4 &mdash; 9th of October 2013
 
 <div class="tldr">tl;dr do whatever, so long as it isn't mean or against the law</div>
 
