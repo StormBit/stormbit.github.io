@@ -34,8 +34,10 @@ section.lead {
 		transition: background .25s;
 		min-width: 125px;
 	}
-	.chat-now:hover {
+	.chat-now:hover, .chat-now:active {
 		background-color: hsl(0, 0%, 85%);
+		// Zeroes the border added on a:active, a:hover
+		border-bottom: none;
 	}
 	.chat-now:after {
 		content: "\203a";
