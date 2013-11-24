@@ -13,6 +13,13 @@ permalink: /:year/:month/:day/:title.html
 encoding: UTF-8
 
 markdown: redcarpet
+redcarpet:
+ extensions: [
+  "no_intra_emphasis",
+  "fenced_code_blocks",
+  "tables",
+  "strikethrough"
+ ]
 pygments: false
 
 # if you change the indents here, also fix it in the Rakefile!
