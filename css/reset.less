@@ -40,6 +40,16 @@ h4 { .head(4); }
 h5 { .head(5); }
 h6 { .head(6); }
 
+table {
+	border-collapse: collapse;
+	margin: @line-height 0;
+	td {
+		.columns(3);
+		padding-top: @line-height;
+		margin: 0;
+	}
+}
+
 p, section.text > ul {
 	margin-bottom: @line-height;
 }
