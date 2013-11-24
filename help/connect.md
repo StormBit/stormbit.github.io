@@ -14,8 +14,8 @@ Main rotation: **irc.stormbit.net**
 Pointers: **irc.pomf.se**
 
 
-The following list is not guaranteed to be up-to-date, so we recommend using the
-main rotation instead.
+<span class="warning">The following list is not guaranteed to be up-to-date, so we recommend using the
+main rotation instead.</span>
 
 Name                    | Address                | Location              |
 ------------------------|:----------------------:|:---------------------:|
