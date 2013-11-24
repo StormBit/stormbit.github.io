@@ -16,14 +16,13 @@ Pointers: **irc.pomf.se**
 <span class="warning">The following list is not guaranteed to be up-to-date, so we recommend using the
 main rotation instead.</span>
 
-Name                    | Address                | Location              |
-------------------------|:----------------------:|:---------------------:|
-aXwNET                  | irc.angelxwind.net     | Las Vegas, Nevada, US |
-StormbitGames Minecraft | bentus.arghargh200.net | idk                   |
-ReimuNET                | irc.reimuhakurei.net   | Atlanta, Georgia, US  |
-xfcab                   | irc.xfcab.net          | idk                   |
-FALLOUT                 | fallout.stormbit.net   | idk                   |
-Ridley                  | ridley.stormbit.net    | UK                    |
+Name                    | Address                | Location                           |
+------------------------|:----------------------:|:----------------------------------:|
+aXwNET                  | irc.angelxwind.net     | Las Vegas, Nevada, United States   |
+ReimuNET                | irc.reimuhakurei.net   | Atlanta, Georgia, United States    |
+xfcab                   | irc.xfcab.com          | Seattle, Washington, United States |
+FALLOUT                 | fallout.stormbit.net   | Nürnberg, Germany                  |
+Ridley                  | ridley.stormbit.net    | Kent, England, United Kingdom      |
 
 All StormBit servers listen on ports 6667 and 6697 (SSL).
 
