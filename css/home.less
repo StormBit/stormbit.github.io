@@ -19,7 +19,6 @@ section.lead {
 	}
 	.chat-now {
 		height: (@line-height * 3);
-		margin-bottom: @line-height;
 		float: right;
 		text-align: center;
 		padding: @line-height 0;
@@ -33,16 +32,35 @@ section.lead {
 		background-color: hsl(0, 0%, 70%);
 		transition: background .25s;
 		min-width: 125px;
+		border: none;
 	}
 	.chat-now:hover, .chat-now:active {
 		background-color: hsl(0, 0%, 85%);
 		// Zeroes the border added on a:active, a:hover
-		border-bottom: none;
+		border: none;
 	}
 	.chat-now:after {
 		content: "\203a";
 		font-size: 20px;
 		margin-left: 3px;
+	}
+	.chat-eventually {
+		transition: color .25s;
+		font-size: 0.8em;
+		.columns(2);
+		float: right;
+		clear: right;
+		min-width: 125px;
+		margin-left: @line-height;
+		margin-bottom: @line-height;
+		text-align: center;
+		color: hsl(0, 0%, 70%);
+		border: none;
+	}
+	.chat-eventually:hover, .chat-eventually:active {
+		// Zeroes the border added on a:active, a:hover
+		border: none;
+		color: hsl(0, 0%, 90%);
 	}
 }
 
