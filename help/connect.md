@@ -10,7 +10,7 @@ Port: **6697**
 SSL: **enabled**
 
 ## Servers
-Main rotation: **irc.stormbit.net**
+Main rotation: **irc.stormbit.net**  
 Pointers: **irc.pomf.se**
 
 
