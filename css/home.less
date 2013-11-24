@@ -15,8 +15,21 @@ section.lead {
 	overflow: hidden;
 
 	h1, p {
-		.columns(12);
 		padding: 0 0 0 @line-height;
+	}
+	h1 {
+		.columns(6);
+		float: left;
+	}
+	h2 {
+		.columns(6);
+		float: right;
+		clear: none;
+		text-align: right;
+		color: hsl(0, 0%, 70%);
+	}
+	p {
+		.columns(12);
 	}
 	.chat-now {
 		height: (@line-height * 3);
@@ -63,6 +76,9 @@ section.lead {
 		border: none;
 		color: hsl(0, 0%, 90%);
 	}
+}
+section.lead.home h1 {
+	.columns(12);
 }
 
 /**

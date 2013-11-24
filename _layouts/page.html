@@ -2,8 +2,14 @@
 layout: default
 ---
 
+<section class="lead">
+	<h1>{{ page.title }}</h1>
+	{% if page.subtitle %}
+	<h2>{{ page.subtitle }}</h2>
+	{% endif %}
+</section>
 <div class="inner">
 	<section class="text">
-{{content}}
+		{{content}}
 	</section>
 </div>

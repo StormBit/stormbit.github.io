@@ -3,7 +3,6 @@ layout: page
 title: Connection Info
 ---
 
-# StormBit Connection Info
 ## Recommended Settings
 Server: **irc.stormbit.net**  
 Port: **6697**  
