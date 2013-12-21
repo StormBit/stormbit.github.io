@@ -9,6 +9,8 @@ Server: **irc.stormbit.net**
 Port: **6697**  
 SSL: **enabled**
 
+<!-- TODO: add certificate links -->
+
 ## Servers
 Main rotation: **irc.stormbit.net**  
 Pointers: **irc.pomf.se**
