@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Network Policy
-subtitle: Revision 4 &mdash; 9th of October 2013
+subtitle: Updated 2013-Oct-09
 ---
 
 By connecting to StormBit you agree to abide by the following rules.  Failure to do so may result in

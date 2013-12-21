@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Connection Info
+subtitle: Bring Your Own Client
 ---
 
 ## Recommended Settings
