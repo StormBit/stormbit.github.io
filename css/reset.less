@@ -30,6 +30,15 @@ a {
 	text-decoration: none;
 	transition: border-bottom .15s;
 }
+p a {
+	border-bottom: 1px solid hsla(0, 0%, 50%, 0.3);
+	transition: border-bottom .15s, color .15s;
+
+	&:hover {
+		border-bottom: 1px solid hsla(0, 0%, 50%, 0.7);
+		color: black;
+	}
+}
 a:hover, a:active {
 	border-bottom: 1px solid hsla(0, 0%, 50%, 0.5);
 }
