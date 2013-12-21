@@ -2,23 +2,22 @@
 
 .show-grid .inner, .show-grid .footer, .show-grid .lead {
 	background-image: repeating-linear-gradient(to top, blue 0, transparent 1px, transparent @line-height);
-//	background-image: url("@{base}/img/baseline.png");
 }
 
 #dev_grid-toggle {
-	color: white;
-	position: fixed;
-	font-face: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 0.8em;
-	z-index: 5001;
-	bottom: 0;
-	right: 0;
-	cursor: pointer;
-	padding: 2px 8px;
 	background-color: black;
 	border-top-left-radius: 5px;
+	bottom: 0;
+	color: white;
+	cursor: pointer;
+	font-face: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 0.8em;
 	opacity: 0.5;
+	padding: 2px 8px;
+	position: fixed;
+	right: 0;
 	transition: opacity .25s;
+	z-index: 5001;
 }
 #dev_grid-toggle:hover {
 	opacity: 1;
@@ -28,33 +27,34 @@
 	display: none;
 }
 .show-grid .dev_grid-verticals {
+	bottom: 0;
 	display: block;
-	overflow: hidden;
 	height: 100%;
-	position: fixed;
 	left: 0;
+	overflow: hidden;
+	padding: 0 @line-height;
+	position: fixed;
 	right: 0;
 	top: 0;
-	bottom: 0;
-	padding: 0 @line-height;
 	z-index: 5000;
 
 	div {
 		.columns(1);
-		border-right: 1px solid red;
+
 		border-left: 1px solid red;
-		height: 100%;
+		border-right: 1px solid red;
 		float: left;
+		height: 100%;
 	}
 	span {
 		border-left: 1px solid purple;
-		height: 100%;
+		content: '';
 		display: block;
 		float: left;
-		width: 0px;
-		content: '';
+		height: 100%;
 		margin: -1px;
 		padding: 0;
+		width: 0px;
 	}
 	div:first-child {
 		border-left: 1px solid red;

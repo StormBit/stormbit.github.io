@@ -7,46 +7,49 @@
  * LEAD SECTION
  */
 section.lead {
-	font-size: 17px;
-	margin-bottom: @line-height;
-	padding: @line-height;
 	background-color: hsl(0, 0%, 10%);
 	color: white;
+	font-size: 17px;
+	margin-bottom: @line-height;
 	overflow: hidden;
+	padding: @line-height;
 
 	h1, p {
 		padding: 0 0 0 @line-height;
 	}
 	h1 {
 		.columns(6);
+
 		float: left;
 	}
 	h2 {
 		.columns(6);
-		float: right;
+
 		clear: none;
-		text-align: right;
 		color: hsl(0, 0%, 70%);
+		float: right;
+		text-align: right;
 	}
 	p {
 		.columns(12);
 	}
 	.chat-now {
-		height: (@line-height * 3);
-		float: right;
-		text-align: center;
-		padding: @line-height 0;
-		border-radius: 4px;
-		font-family: 'M+ 1p';
-		color: hsl(0, 0%, 0%);
-		text-transform: uppercase;
-		font-weight: 400;
 		.columns(2);
-		margin-left: @line-height;
+
 		background-color: hsl(0, 0%, 70%);
-		transition: background .25s;
-		min-width: 125px;
+		border-radius: 4px;
 		border: none;
+		color: hsl(0, 0%, 0%);
+		float: right;
+		font-family: 'M+ 1p';
+		font-weight: 400;
+		height: (@line-height * 3);
+		margin-left: @line-height;
+		min-width: 125px;
+		padding: @line-height 0;
+		text-align: center;
+		text-transform: uppercase;
+		transition: background .25s;
 	}
 	.chat-now:hover, .chat-now:active {
 		background-color: hsl(0, 0%, 85%);
@@ -59,17 +62,18 @@ section.lead {
 		margin-left: 3px;
 	}
 	.chat-eventually {
-		transition: color .25s;
-		font-size: 0.8em;
 		.columns(2);
-		float: right;
-		clear: right;
-		min-width: 125px;
-		margin-left: @line-height;
-		margin-bottom: @line-height;
-		text-align: center;
-		color: hsl(0, 0%, 70%);
+
 		border: none;
+		clear: right;
+		color: hsl(0, 0%, 70%);
+		float: right;
+		font-size: 0.8em;
+		margin-bottom: @line-height;
+		margin-left: @line-height;
+		min-width: 125px;
+		text-align: center;
+		transition: color .25s;
 	}
 	.chat-eventually:hover, .chat-eventually:active {
 		// Zeroes the border added on a:active, a:hover
@@ -86,6 +90,7 @@ section.lead.home h1 {
  */
 section.news {
 	.columns(12);
+
 	ul {
 		list-style: none;
 	}
@@ -93,8 +98,8 @@ section.news {
 		display: block;
 	}
 	time {
-		display: inline;
 		color: hsl(0, 0%, 50%);
+		display: inline;
 	}
 	address.person {
 		display: inline;
@@ -108,14 +113,16 @@ section.news {
  * TWITTER BOX
  */
 section.twitter {
-	float: right;
 	.columns(6);
-	padding: @line-height;
+
 	background-color: hsl(0, 0%, 80%);
 	border-radius: 5px 5px 5px 5px;
-	margin-top: @line-height;
+	float: right;
 	margin-bottom: @line-height;
 	margin-left: @grid-margins;
+	margin-top: @line-height;
+	padding: @line-height;
+
 	iframe {
 		display: block;
 	}

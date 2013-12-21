@@ -14,9 +14,10 @@
 }
 html,
 body {
-	height: 100%;
-	.text();
+	.text;
+
 	background: @background;
+	height: 100%;
 }
 
 strong {
@@ -24,10 +25,10 @@ strong {
 }
 
 a {
+	border-bottom: 1px solid hsla(0, 0%, 50%, 0);
 	color: inherit;
 	text-decoration: none;
 	transition: border-bottom .15s;
-	border-bottom: 1px solid hsla(0, 0%, 50%, 0);
 }
 a:hover, a:active {
 	border-bottom: 1px solid hsla(0, 0%, 50%, 0.5);
@@ -47,10 +48,12 @@ h6 { .head(6); }
 table {
 	border-collapse: collapse;
 	margin: @line-height 0;
+
 	td {
 		.columns(3);
-		padding-top: @line-height;
+
 		margin: 0;
+		padding-top: @line-height;
 	}
 }
 

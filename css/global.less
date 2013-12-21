@@ -10,55 +10,57 @@
 	// The navbar is out of the main flow, most notably ignoring the baseline
 	// grid.  It obeys the columns, just as the #page does.
 
-	font-family: 'M+ 1p', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: 300;
 	background-color: #191919;
-	height: 51px;
-	width: 100%;
-	color: rgba(171, 171, 171, 0.5);
 	border-bottom: 1px solid #262626;
+	color: rgba(171, 171, 171, 0.5);
+	font-family: 'M+ 1p', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	height: 51px;
+	position: absolute;
 	text-shadow: 0 0 0 #ABABAB;
 	text-transform: uppercase;
-	font-size: 15px;
-	position: absolute;
 	top: 0;
+	width: 100%;
 
 	nav {
 		.columns(4, 0%);
+
+		border-left: 1px solid #262626;
 		float: right;
 		height: 50px;
 		padding: 0;
-		border-left: 1px solid #262626;
 	}
 	ul {
 		list-style: none;
 	}
 	img {
-		display: block;
-		border-width: 0 1px;
-		border-style: solid;
 		border-color: #262626;
+		border-style: solid;
+		border-width: 0 1px;
+		display: block;
 	}
 	a {
 		display: inline-block;
-		transition: all .25s;
 		float: left;
+		transition: all .25s;
 	}
 	a:hover {
 		background-color: #262626;
 	}
 	li {
+		.columns(3, 0%);
+
+		border-right: 1px solid #262626;
 		float: left;
 		height: 50px;
-		border-right: 1px solid #262626;
-		.columns(3, 0%);
 		padding: 0;
 	}
 	li a {
-		width: 100%;
 		height: 101%;
 		padding-top: 16px;
 		text-align: center;
+		width: 100%;
 	}
 }
 
@@ -66,7 +68,8 @@
  * CONTAINER STYLES
  */
 .container {
-	.columns-container();
+	.columns-container;
+
 	margin: 0 auto;
 }
 
@@ -74,20 +77,21 @@
  * PAGE WRAPPER STYLES
  */
 #page {
-	margin-top: 50px;
-	box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
-	min-height: 100%;
 	background-color: hsl(0, 0%, 95%);
-	padding-bottom: 180px;
 	background-position: 0 10px;
+	box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+	margin-top: 50px;
+	min-height: 100%;
+	padding-bottom: 180px;
 }
 #page > .inner {
 	margin-left: @line-height;
 	margin-right: @line-height;
 }
 #page .text {
-	padding-top: @line-height;
 	.columns(12);
+
+	padding-top: @line-height;
 }
 
 /**
@@ -97,36 +101,38 @@
 	background-color: #191919;
 	color: hsl(0, 0%, 60%);
 	font-size: round((@font-size * 0.9), 2);
-	margin-top: -180px;
 	height: 180px;
+	margin-top: -180px;
 	overflow: hidden;
 
 	.container {
 		padding: 0 @line-height;
 	}
 	nav {
-		padding-top: @line-height;
 		overflow: hidden;
+		padding-top: @line-height;
 	}
 	h1 {
-		font-size: round((@font-size * 0.8), 2);
-		line-height: @line-height;
-		font-weight: 700;
-		text-transform: uppercase;
 		color: hsl(0, 0%, 40%);
+		font-size: round((@font-size * 0.8), 2);
+		font-weight: 700;
+		line-height: @line-height;
+		text-transform: uppercase;
 	}
 	ul {
 		list-style: none;
+
 		ul {
 			padding-left: 20px;
 		}
 	}
 	nav > ul > li {
-		float: left;
 		.columns(4);
+
+		float: left;
 	}
 	.copyright {
-		text-align: center;
 		padding: @line-height 0;
+		text-align: center;
 	}
 }
