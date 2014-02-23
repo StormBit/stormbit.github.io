@@ -19,7 +19,8 @@
     "url": "https://github.com/StormBit/stormbit.github.io/issues"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-less": "~0.8.1"
+    "grunt": "0.4.x",
+    "grunt-contrib-less": "0.9.x",
+    "grunt-contrib-watch": "0.5.x"
   }
 }
