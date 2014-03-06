@@ -1,16 +1,15 @@
 ---
 layout: default
 ---
-{% if paginator.page > 1 %}
-{% include paginator.html classes="top" %}
-{% endif %}
 {% if paginator.page == 1 %}
-	<section class="lead home">
-		<h1>Welcome to StormBit</h1>
-		<a href="//webchat.{{ site.tld }}" class="chat-now">Chat Now</a>
-		<a href="{{ site.base }}help/connect.html" class="chat-eventually">or connect manually</a>
-		<p>StormBit is an IRC network dedicated to anything you can think of: from open source projects, to video games, to anime culture, we have a little of every community, so you can feel right at home.  We also strongly believe in free speech and take a very hands-off approach to moderation, so if you can't find a channel that suits you, come on and make one!</p>
-	</section>
+<section class="lead home">
+	<h1>Welcome to StormBit</h1>
+	<a href="//webchat.{{ site.tld }}" class="chat-now">Chat Now</a>
+	<a href="{{ site.base }}help/connect.html" class="chat-eventually">or connect manually</a>
+	<p>StormBit is an IRC network dedicated to anything you can think of: from open source projects, to video games, to anime culture, we have a little of every community, so you can feel right at home.  We also strongly believe in free speech and take a very hands-off approach to moderation, so if you can't find a channel that suits you, come on and make one!</p>
+</section>
+{% else %}
+{% include paginator.html classes="top" %}
 {% endif %}
 {{ site.pagination_path }}
 <div class="inner">
