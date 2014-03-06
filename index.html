@@ -30,6 +30,11 @@ layout: default
 		</article></li>
 	{% endfor %}
 	</ul></section>
+	{% if paginator.page == 1 %}
+	<section class="forums">
+		Forums go here.
+	</section>
+	{% endif %}
 </div>
 {% if paginator.page == 1 %}
 {% include paginator.html classes="bottom" %}
