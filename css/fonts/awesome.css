@@ -12,32 +12,3 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
-[class^="icon-"],
-[class*=" icon-"] {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  display: inline;
-  width: auto;
-  height: auto;
-  line-height: normal;
-  vertical-align: baseline;
-  background-image: none;
-  background-position: 0% 0%;
-  background-repeat: repeat;
-  margin-top: 0;
-}
-
-.icon-chevron-left:before { content: "\f021"; }
-.icon-chevron-right:before { content: "\f022"; }
-.icon-arrow-left:before { content: "\f023"; }
-.icon-arrow-right:before { content: "\f024"; }
-.icon-circle-arrow-left:before { content: "\f025"; }
-.icon-circle-arrow-right:before { content: "\f026"; }
-.icon-caret-left:before { content: "\f027"; }
-.icon-caret-right:before { content: "\f028"; }
-.icon-angle-left:before { content: "\f029"; }
-.icon-angle-right:before { content: "\f02a"; }
