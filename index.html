@@ -2,19 +2,7 @@
 layout: default
 ---
 {% if paginator.page > 1 %}
-	<section class="paginator top">
-		{% if paginator.previous_page %}
-			<a href="{{site.base}}{{ paginator.previous_page_path }}" class="page-newer">&#xF021;</a>
-		{% else %}
-			<a class="page-newer disabled">&#xF021;</a>
-		{% endif %}
-		<h1>Page {{ paginator.page }} of {{ paginator.total_pages }}</h1>
-		{% if paginator.next_page %}
-			<a href="{{site.base}}{{ paginator.next_page_path }}" class="page-older">&#xF022;</a>
-		{% else %}
-			<a class="page-older disabled">&#xF022;</a>
-		{% endif %}
-	</section>
+{% include paginator.html classes="top" %}
 {% endif %}
 {% if paginator.page == 1 %}
 	<section class="lead home">
@@ -45,12 +33,5 @@ layout: default
 	</ul></section>
 </div>
 {% if paginator.page == 1 %}
-	{% if paginator.total_pages > 1 %}
-		<section class="paginator bottom">
-			<h1>Page {{ paginator.page }} of {{ paginator.total_pages }}</h1>
-			{% if paginator.next_page %}
-				<a href="{{ paginator.next_page_path | replace: '//', '/' }}" class="page-older">&#xF022;</a>
-			{% endif %}
-		</section>
-	{% endif %}
+{% include paginator.html classes="bottom" %}
 {% endif %}

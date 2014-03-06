@@ -1,0 +1,7 @@
+<section class="paginator {{ include.classes }}">
+	<a href="{{ site.base }}{{ paginator.previous_page_path }}"
+	   class="page-prev {% unless paginator.previous_page %}disabled{% endunless %}">&#xF021;</a>
+	<h1>Page {{ paginator.page }} of {{ paginator.total_pages }}</h1>
+	<a href="{{ site.base }}{{ paginator.next_page_path }}"
+	   class="page-next {% unless paginator.next_page %}disabled{% endunless %}">&#xF022;</a>
+</section>
