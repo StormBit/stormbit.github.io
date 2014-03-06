@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-{% if paginator.page == 1 %}
+{% if paginator.page == 1 %}{% assign firstpage = 1 %}{% endif %}
+
+{% if firstpage %}
 <section class="lead home">
 	<h1>Welcome to StormBit</h1>
 	<a href="//webchat.{{ site.tld }}" class="chat-now">Chat Now</a>
@@ -32,12 +34,12 @@ layout: default
 		{% assign sticky = '' %}
 	{% endfor %}
 	</ul></section>
-	{% if paginator.page == 1 %}
+	{% if firstpage %}
 	<section class="forums">
 		Forums go here.
 	</section>
 	{% endif %}
 </div>
-{% if paginator.page == 1 %}
+{% if firstpage %}
 {% include paginator.html classes="bottom" %}
 {% endif %}
