@@ -1,7 +1,21 @@
 ---
 layout: default
 ---
-
+{% if paginator.page > 1 %}
+<section class="paginator top">
+{% if paginator.previous_page %}
+<a href="{{site.base}}{{ paginator.previous_page_path }}" class="page-newer">&#xF021;</a>
+{% else %}
+<a class="page-newer disabled">&#xF021;</a>
+{% endif %}
+<h1>Page {{ paginator.page }} of {{ paginator.total_pages }}</h1>
+{% if paginator.next_page %}
+<a href="{{site.base}}{{ paginator.next_page_path }}" class="page-older">&#xF022;</a>
+{% else %}
+<a class="page-older disabled">&#xF022;</a>
+{% endif %}
+</section>
+{% endif %}
 {% if paginator.page == 1 %}
 <section class="lead home">
 	<h1>Welcome to StormBit</h1>
@@ -32,13 +46,15 @@ layout: default
 			{% endif %}
 		</article></li>
 	{% endfor %}
-	{% if paginator.total_pages > 1 %}
-	{% if paginator.previous_page %}
-		<a href="{{ paginator.previous_page_path | prepend: site.base | replace: '//', '/' }}" class="page-newer">Newer</a>
-	{% endif %}
-	{% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path | prepend: site.base | replace: '//', '/' }}" class="page-older">Older</a>
-	{% endif %}
-	{% endif %}
 	</ul></section>
 </div>
+{% if paginator.page == 1 %}
+{% if paginator.total_pages > 1 %}
+<section class="paginator bottom">
+<h1>Page {{ paginator.page }} of {{ paginator.total_pages }}</h1>
+{% if paginator.next_page %}
+<a href="{{ site.base }}{{ paginator.next_page_path }}" class="page-older">&#xF022;</a>
+{% endif %}
+</section>
+{% endif %}
+{% endif %}

@@ -95,6 +95,54 @@
 }
 
 /**
+ * PAGINATOR STYLES
+ */
+section.paginator {
+	background-color: hsl(0, 0%, 10%);
+	color: white;
+	margin-top: @line-height;
+	padding: @line-height 0;
+	height: (@line-height * 4);
+	overflow: auto;
+	text-align: center;
+	&.bottom {
+		border-bottom: 1px solid #262626;
+		margin-top: @line-height;
+	}
+	&.top {
+		margin-bottom: @line-height;
+	}
+	a.page-older,
+	a.page-newer {
+		.head(1);
+		font-family: 'Font Awesome', FontAwesome, none;
+		color: #999;
+		margin: 0 @line-height;
+		font-size: 2em;
+		vertical-align: middle;
+		display: inline-block;
+		height: (@line-height * 2);
+		width: (@line-height * 2);
+		transition: color .2s;
+
+		&:hover {
+			color: #EEE;
+			border: none;
+		}
+		&.disabled, .disabled:hover {
+			color: #222;
+			cursor: default;
+		}
+	}
+	a.page-older { float: right; }
+	a.page-newer { float: left; }
+	h1 {
+		display: inline;
+	}
+}
+
+
+/**
  * FOOTER STYLES
  */
 .footer {
