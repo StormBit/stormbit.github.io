@@ -16,18 +16,20 @@ layout: default
 	<section class="news"><ul>
 	{% for post in paginator.posts %}
 		{% assign author = site.people[post.author] %}
-		<li><article{% if forloop.first and paginator.page == 1 %} class="sticky"{% endif %}>
+		{% if forloop.first and firstpage %}{% assign sticky = 'sticky' %}{% endif %}
+		<li><article class="{{ sticky }}">
 			<header>
 				<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 				{% include person.html person=post.author size="small" %}
 				<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %b %Y' }}</time>
 			</header>
-			{% if forloop.first and paginator.page == 1 %}
-				<blockquote>{{ post.content }}</blockquote>
+			{% if sticky == 'sticky' %}
+			<blockquote>{{ post.content }}</blockquote>
 			{% else %}
 				<blockquote>{{ post.content|truncatewords: 60 }} <a href="{{ post.url }}">Read More</a></blockquote>
 			{% endif %}
 		</article></li>
+		{% assign sticky = '' %}
 	{% endfor %}
 	</ul></section>
 	{% if paginator.page == 1 %}
