@@ -1,0 +1,75 @@
+@import url("settings.less");
+
+/* Color Mixins */
+.dark {
+	background-color: #191919;
+	color: white;
+	border: 0px solid #262626;
+}
+.mid {
+	background-color: #B3B3B3;
+	color: black;
+}
+.light {
+	background-color: #F2F2F2;
+	color: #333;
+}
+
+/* Zero Mixin */
+.zero {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Box Sizing Mixin */
+.box-sizing(@mode: border-box) {
+	-webkit-box-sizing: @mode;
+	   -moz-box-sizing: @mode;
+	        box-sizing: @mode;
+}
+
+/* Flexbox Container Mixin */
+.flexbox {
+	display: flex;
+	display: -moz-flex;
+	display: -webkit-flex;
+	overflow: hidden;
+}
+
+/* Body Font Mixin */
+.font (@size: @font-size) {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: @size;
+	font-weight: 300;
+	line-height: (ceil(@size / @line-height) * @line-height);
+}
+
+/* Header Font Mixin */
+.font-head (@size: @font-size) {
+	font-family: 'M+ 1p', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: @size;
+	font-weight: 300;
+	line-height: (ceil(@size / @line-height) * @line-height);
+}
+
+/* Header Mixin */
+.head (0) { .font-head; }
+.head (@level) {
+	@size: round((@header-size - 3px * @level), 2);
+
+	font-size: @size;
+	line-height: (ceil(@size / @line-height) * @line-height);
+}
+
+/* Columns Mixins */
+.columns-container () {
+	max-width: 1024px;
+	width: 100%;
+	margin: 0 auto;
+}
+.columns (@cols: 1, @margins: @grid-margins) {
+	margin-left: (@margins / 2);
+	margin-right: (@margins / 2);
+	width: round(((@cols / @grid-columns) * 100% - @margins), 2);
+}
