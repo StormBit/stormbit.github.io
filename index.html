@@ -19,22 +19,12 @@ layout: default
 <div class="inner">
 <!-- NEWS -->
 	<section class="news"><ul>
-	{% for post in paginator.posts %}
-		{% assign author = site.people[post.author] %}
-		{% if forloop.first and firstpage %}{% assign sticky = 'sticky' %}{% endif %}
-		<li><article class="{{ sticky }}">
-			<header>
-				<h1><a href="{{ site.base }}{{ post.url }}">{{ post.title }}</a></h1>
-				{% include person.html person=post.author size="small" %}
-				<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %b %Y' }}</time>
-			</header>
-			{% if sticky == 'sticky' %}
-			<blockquote>{{ post.content }}</blockquote>
-			{% else %}
-				<blockquote>{{ post.content|truncatewords: 60 }} <a href="{{ post.url }}">Read More</a></blockquote>
-			{% endif %}
-		</article></li>
-		{% assign sticky = '' %}
+	{% for p in paginator.posts %}
+		{% if forloop.first and firstpage %}
+		{% include post.html post=p display='sticky' %}
+		{% else %}
+		{% include post.html post=p display='excerpt' %}
+		{% endif %}
 	{% endfor %}
 	</ul></section>
 	<!-- /NEWS -->

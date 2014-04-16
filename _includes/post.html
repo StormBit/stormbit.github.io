@@ -1,0 +1,22 @@
+{% assign display = include.display %}
+{% assign post = include.post %}
+{% if include.content %}
+{% assign content = include.content %}
+{% else %}
+{% assign content = post.content %}
+{% endif %}
+<article class="post-{{ display }}">
+	<header>
+		<h1><a href="{{ site.base }}{{ post.url }}">{{ post.title }}</a></h1>
+		{% include person.html person=post.author size="small" %}
+		<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %b %Y' }}</time>
+	</header>
+	{% case display %}
+	{% when 'excerpt' %}
+	<blockquote>{{ post.excerpt }}</blockquote>
+	{% when 'sticky' %}
+	<blockquote>{{ content }}</blockquote>
+	{% when 'full' %}
+	{{ content }}
+	{% endcase %}
+</article>
