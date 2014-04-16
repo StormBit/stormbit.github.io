@@ -6,7 +6,7 @@ document.addEventListener('readystatechange', function () {
 		toggleBtn.id = 'dev_grid-toggle';
 
 		var verticals = document.createElement('div');
-		verticals.className = 'dev_grid-verticals container';
+		verticals.className = 'dev_grid-verticals midwidth';
 
 		// Generate grid
 		verticals.appendChild(document.createElement('span'));
