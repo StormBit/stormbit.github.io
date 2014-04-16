@@ -17,9 +17,9 @@
 
 /* Zero Mixin */
 .zero {
+	border: 0;
 	margin: 0;
 	padding: 0;
-	border: 0;
 }
 
 /* Box Sizing Mixin */
@@ -31,8 +31,8 @@
 
 /* Flexbox Container Mixin */
 .flexbox {
-	display: flex;
-	display: -moz-flex;
+	display:         flex;
+	display:    -moz-flex;
 	display: -webkit-flex;
 	overflow: hidden;
 }
@@ -64,9 +64,9 @@
 
 /* Columns Mixins */
 .columns-container () {
+	margin: 0 auto;
 	max-width: 1024px;
 	width: 100%;
-	margin: 0 auto;
 }
 .columns (@cols: 1, @margins: @grid-margins) {
 	margin-left: (@margins / 2);
