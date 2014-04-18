@@ -1,0 +1,35 @@
+{% assign _person = site.people[include.person] %}
+
+{% if include.size == "big" %}
+<section class="person person-{{ include.person }}" id="person-{{ include.person }}">
+	<header>
+		<img src="//www.gravatar.com/avatar/{{ _person.gravatar }}?s=60" alt="avatar">
+		<h2>{{ _person.name }}</h2>
+		<span>{{ _person.role }}</span>
+	</header>
+	<dl class="info">
+		{% if _person.nick %}
+		<dt class="nick">nick</dt>
+		<dd class="nick">{{ _person.nick }}</dd>
+		{% endif %}
+		{% if _person.website %}
+		<dt class="website">website</dt>
+		<dd class="website"><a href="{{ _person.website }}">{{ _person.website }}</a></dd>
+		{% endif %}
+		{% if _person.twitter %}
+		<dt class="twitter">twitter</dt>
+		<dd class="twitter"><a href="http://twitter.com/{{ _person.twitter }}">{{ _person.twitter }}</a></dd>
+		{% endif %}
+		{% if _person.location %}
+		<dt class="location">location</dt>
+		<dd class="location">{{ _person.location }}</dd>
+		{% endif %}
+	</dl>
+</section>
+{% elsif include.size == "small" %}
+<a rel="author" href="about/people.html#person-{{ include.person }}">
+	<address class="person person-{{ include.person }}">
+		{{ _person.name }}
+	</address>
+</a>
+{% endif %}

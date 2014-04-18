@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% assign author = site.people[page.author] %}
+<article>
+	<header>
+		<h1><a href=".{{ page.url }}">{{ page.title }}</a></h1>
+		{% include person.html person=page.author size="big" %}
+		<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d %b %Y @ %H:%M' }}</time>
+	</header>
+	{{ content }}
+</article>

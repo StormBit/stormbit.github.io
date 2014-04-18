@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="{{ site.description }}">
+	<meta name="keywords" content="{{  site.keywords  }}">
+	{% if page.author %}<meta name="author" content="{{ page.author }}">{% endif %}
+	<title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.name }}</title>
+	<link rel="stylesheet" type="text/css" href="{{ site.base }}css/style.css">
+	{% if site.env == 'development' %}
+	<link rel="stylesheet" type="text/css" href="{{ site.base }}css/dev-grid.css">
+	<script id="dev_grid-toggle" src="{{ site.base }}css/dev-grid.js"></script>
+	{% endif %}
+</head>
+<body>
+	<div id="topbar" class="navbar">
+		<div class="container">
+			<a href="{{site.base}}"><img src="{{ site.base }}img/logo.svg" height=50 alt="{{ site.name }}"></a>
+		<nav><ul>
+			<li><a href="//webchat.{{ site.tld }}/">Chat</a></li>
+			<li><a href="{{ site.base }}help/">Help</a></li>
+			<li><a href="{{ site.base }}help/about.html">About</a></li>
+		</ul></nav>
+		</div>
+	</div>
+	<div id="page" class="container">
+		{{ content }}
+	</div>
+	<div id="footer" class="footer">
+		<div class="container">
+			<nav><ul>
+				<li><h1>About</h1><ul>
+					<li><a href="{{ site.base }}help/people.html">People</a></li>
+					<li><a href="{{ site.base }}help/policies.html">Policies</a></li>
+					<li><a href="{{ site.base }}help/">Help</a></li>
+					<!-- <li><a href="//status.{{ site.tld }}/">Status</a></li> -->
+				</ul></li>
+				<li><h1>IRC</h1><ul>
+					<li><a href="//webchat.{{ site.tld }}/">Web Chat</a></li>
+					<li><a href="{{ site.base }}help/connect.html">Connection Info</a></li>
+					<li><a href="{{ site.base }}help/services.html">Services</a></li>
+				</ul></li>
+			</ul></nav>
+			<div class="copyright">&copy; {{ site.time | date: "%Y" }} {{ site.name }}</div>
+		</div>
+	</div>
+
+	<!-- Made with love by Nuck -->
+	<!-- I'll accept payment in lucies. -->
+</body>
+</html>
