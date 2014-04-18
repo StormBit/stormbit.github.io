@@ -14,6 +14,7 @@ title: Help Index
 # Network Help
  * [#StormBit on irc.stormbit.net](//webchat.stormbit.net/stormbit) ([or in your
    own client](irc://irc.stormbit.net/stormbit))
+ * [Forums](//discuss.stormbit.net)
  * [Bouncer]({{ site.base }}help/stormbnc.html)
  * [email](mailto:abuse@stormbit.net)
 
