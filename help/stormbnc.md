@@ -12,12 +12,12 @@ It's a piece of software that sits between your IRC client, and an IRC server, a
 	it you will not notice any difference other than that your connection will be retained, and you will be
 	getting logs of what has transpired in your absence.  This behaviour is completely customizable and 
 	can be turned off if it really bothers you!
-	![How ZNC Works 'n stuff][ZNCDiagram]
+	![How ZNC Works 'n stuff](https://i.imgur.com/BAGbiWb.png)
 
-If you'd like to know more, please feel free to ask, or [alternatively you can read more on Wikipedia][HowDoesIShotBNC].
+If you'd like to know more, please feel free to ask, or [alternatively you can read more on Wikipedia](https://en.wikipedia.org/wiki/Bouncer_(networking)#IRC).
 
 For those already clued up on what bouncers are, and what they can offer, we are running the latest [ZNC
-	bouncer software][ZNC] with a slew of custom modules.
+	bouncer software](http://znc.in/) with a slew of custom modules.
 	
 We do not currently offer any fancy hostnames - especially now that most IRC networks offer them via services
 	- however should there be enough demand, we will look at enabling some!
@@ -26,7 +26,7 @@ We do not currently offer any fancy hostnames - especially now that most IRC net
 - Transparently connect several clients to one IRC network at once. (e.g. Keep your laptop, desktop, phone, 
 	_and_ tablet connected via the same user!)
 - Push notifications on your phone, whenever anyone mentions your name.  
-	(Requires a push notifications service. We prefer [PushBullet][PushBullet].
+	(Requires a push notifications service. We prefer [PushBullet](https://pushbullet.com/).
 - Built in cryptology to help keep your channels secure.
 - Automatic spam-attack protection.  ZNC can automatically 'detatch' you from a channel to prevent 
 	damage to your client.
@@ -43,14 +43,9 @@ get a free ZNC account!
 <iframe 
 	src="https://docs.google.com/forms/d/1yPuzIQj04rgRHST0JLg3aJ-m_nvCPY09Cqke1UvNtu8/viewform?embedded=true"
 	width="100%"
-	height="500"
+	height="542"
 	frameborder="0"
 	marginheight="0"
 	marginwidth="0">
 		Loading form...
 </iframe>
-
-[HowDoesIShotBNC]: https://en.wikipedia.org/wiki/Bouncer_(networking)#IRC	"Wikipedia on IRC Bouncers"
-[ZNC]: http://znc.in/														"ZNC"
-[PushBullet]: https://pushbullet.com/		 								"PushBullet"
-[ZNCDiagram]: https://i.imgur.com/BAGbiWb.png								"How ZNC works"
