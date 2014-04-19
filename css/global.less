@@ -90,8 +90,6 @@
 }
 #page .text {
 	.columns(12);
-
-	padding-top: @line-height;
 }
 
 /**
@@ -187,8 +185,12 @@ section.paginator {
 
 /* I'm just gonna cram this here for now */
 section.person {
-	width: 20%;
+	.columns(4);
+
+	background-color: hsl(0, 0%, 70%);
 	float: right;
+	max-width: 250px;
+	padding: 1em;
 }
 .info dt {
 	font-weight: bold;
