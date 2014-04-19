@@ -14,7 +14,7 @@ You connect to it as you would normally, and it connects to your chosen IRC netw
   can be turned off if it really bothers you!
   
 <div style="text-align:center" markdown="1">
-  ![How ZNC Works 'n stuff](//i.imgur.com/BAGbiWb.png)
+  ![](//i.imgur.com/BAGbiWb.png "How ZNC Works 'n stuff")
 </div>
 
 If you'd like to know more, please feel free to ask, or 
