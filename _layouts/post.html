@@ -19,12 +19,12 @@ layout: default
 	<div id="discourse-comments"></div>
 </div>
 <script type="text/javascript">
-  var discourseUrl = "http://discuss.stormbit.net/",
-      discourseEmbedUrl = 'http://stormbit.net<%= current_page.url %>';
+	var discourseUrl = "http://discuss.stormbit.net/",
+		discourseEmbedUrl = 'http://stormbit.net/{{page.url}}';
 
-  (function() {
-    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-      d.src = discourseUrl + 'javascripts/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-  })();
+	(function() {
+		var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+		d.src = discourseUrl + 'javascripts/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+	})();
 </script>
