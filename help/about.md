@@ -43,11 +43,14 @@ We openly embrace many open-source technologies in order to offer what we feel i
 Amongst these are:
 
 - The Linux kernel.  Nearly every system we own or maintain runs on the Linux kernel and much of our work is
-  only made possibly by its sheer flexibility.
-- Debian 7. Offering rock-solid stability, and powerful easy-to-use command-line tools, Debian is the de-facto
-  standard for the majority of linux-based servers.  Nearly all of our ‘fleet’ runs some flavour of Debian.
+  only made possible by its sheer flexibility.
+- Debian 7. Offering rock-solid stability, and powerful easy-to-use command-line tools, Debian has become 
+  something of a de-facto standard for the majority of linux-based servers. Nearly every system in our ‘fleet’ 
+  runs some flavour of Debian - Indeed we make extensive use of Debian's package management and maintain our
+  own repository to deploy software updates quickly and efficiently.
 - Ubuntu Server. For the rest, for systems where both stability and bleeding-edge software is required, there
-  is little choice for a production server than Ubuntu.  It just works.  Like Debian, but with newer stuff.
+  is little choice for a production server than Ubuntu.  It just works.  Like Debian, but with newer stuff, 
+  and yet still compatible with its packages.
 - InspIRCd 2. A hallmark for all IRC server software, we believe InspIRCd speaks for itself. Everything is 
   a module, enabling networks to scale up and cherrypick the features they want to offer.  In our case the 
   unique linking capabilities of InspIRCd make it the perfect choice, with a plethora of nifty security 
