@@ -27,6 +27,4 @@ layout: none
 	{% endfor %}
 	null
 ]
-{% endcapture %}
-
-{{ json | strip_newlines | replace: '	', '  ' | replace: '  ', '' | replace: ': ', ':' | replace: ' :', ':' }}
+{% endcapture %}{{ json | strip_newlines | replace: '	', '  ' | replace: '  ', '' | replace: ': ', ':' | replace: ' :', ':' }}
