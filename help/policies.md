@@ -29,7 +29,7 @@ As a StormBit user, you are expected to respect other users and network staff.
  - Staff will not interfere with independent channels (those not owned by the network) unless
    requested by channel owners or, in some cases, operators on the channel access list.  If asked to
    step in, staff will make judgement calls based on network health and safety.
- - Staff will not abuse their priveleges to enforce network or channel rules in independent channels.
+ - Staff will not abuse their privileges to enforce network or channel rules in independent channels.
  - All channels are independent of the network, there are no restrictions on what is allowed in them
    as long as you comply with United States law and don't harm the network or other users.
  - Staff will interfere in the case of "stalkers" and other exceptional circumstances, regardless of
@@ -40,7 +40,7 @@ As a StormBit user, you are expected to respect other users and network staff.
 
  - Use /ignore if somebody is harassing you and not explicitly breaking any rules.
  - Bots, file servers, and proxies (including Tor) are allowed, as long as you comply with the rest
-   of the rules.  Bots should set usermode +B on themselves.
+   of the rules.  Bots should set usermode +B on themselves to avoid confusion.
  - Our stance on vhosts is rather liberal.  Anything goes as long as it doesn't explicitly attack
    other users or their views or is grossly inappropriate.  Domain names are even allowed, as long
    as you can prove you represent the owner of the domain; however, these cannot be requested
