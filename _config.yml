@@ -25,6 +25,15 @@ pygments: false
 
 # if you change the indents here, also fix it in the Rakefile!
 people:
+  amethyst:
+    name: Amethyst
+    email:
+    nick: amethyst
+    website:
+    twitter:
+    gravatar:
+    location:
+    role:
   antoligy:
     name: Alex Wilson
     email: alex.w@stormbit.net
@@ -33,7 +42,25 @@ people:
     twitter: antoligy
     gravatar: a38b4c49423da71c55cec5b9482a682f
     location: West Midlands, England
+    role: Network Adminstrator
+  angelXwind:
+    name: Karen Tsai
+    email: alex.w@stormbit.net
+    nick: angelXwind
+    website: http://angelxwind.net/
+    twitter: angelXwind
+    gravatar: e7ec1508da6f89b3b971aa93d194b0b1
+    location: New York, USA
     role: Senior Network Adminstrator
+  dj_arghlex:
+    name: Alex Mitchell
+    email:
+    nick: dj_arghlex
+    website: http://arghlex.net/
+    twitter:
+    gravatar:
+    location: Washington, USA
+    role: Network Technician
   mikotohe2:
     name: Lucy Firman
     email: lucy.f@stormbit.net
@@ -51,3 +78,21 @@ people:
     gravatar:
     location: Indiana, USA
     role: Senior Network Administrator
+  rikai:
+    name: Matthew Rupp
+    email:
+    nick: rikai
+    website: http://rikairchy.net/
+    twitter:
+    gravatar:
+    location: North Carolina, USA
+    role: Network Technician
+  tiffany:
+    name: Alex Ingram
+    email: tiffany@stormbit.net
+    nick: tiffany
+    website: http://lymiahugs.com/~tiffany
+    twitter: tiffany_public
+    gravatar: 8ca0ebe649d1a7cb609b53d540b05f52
+    location: Florida, USA
+    role: Network Technician
