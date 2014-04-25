@@ -38,7 +38,7 @@ layout: default
 			{% if forloop.first and paginator.page == 1 %}
 				<blockquote>{{ post.content }}</blockquote>
 			{% else %}
-				<blockquote>{{ post.excerpt }}</blockquote>
+				<blockquote>{{ post.truncatewords|truncatewords: 140 }}</blockquote>
 			{% endif %}
 		</article></li>
 	{% endfor %}
