@@ -195,6 +195,10 @@ section.person {
 	float: right;
 	max-width: 250px;
 	padding: 1em;
+
+	header {
+		text-align: center;
+	}
 }
 .info dt {
 	font-weight: bold;
@@ -205,4 +209,21 @@ section.person {
 
 #discourse-comments {
 	margin-top: @line-height;
+}
+
+.people {
+    width: 99%;
+    margin: 0 0.5%;
+    padding-top: 20px;
+}
+.people li {
+    float: left;
+    width: 25%;
+    min-height: 400px;
+    list-style: none;
+}
+.people .person {
+    width: 100%;
+    max-width: auto;
+    min-height: 350px;
 }
