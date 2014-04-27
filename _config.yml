@@ -51,7 +51,16 @@ people:
     twitter: angelXwind
     gravatar: e7ec1508da6f89b3b971aa93d194b0b1
     location: New York, USA
-    role: Senior Network Adminstrator
+    role: Network Adminstrator
+  benbop:
+    name: Ben ale
+    email: benbop@antoligy.com
+    nick: benbop
+    website:
+    twitter: benbop1992
+    gravatar: 5b1856bc156e2e3ee51f74fb126ca846
+    location: Walsall, UK
+    role: Network Technician
   dj_arghlex:
     name: Alex Mitchell
     email:
@@ -77,7 +86,7 @@ people:
     twitter: kudo147
     gravatar:
     location: Indiana, USA
-    role: Senior Network Administrator
+    role: Network Administrator
   rikai:
     name: Matthew Rupp
     email:
