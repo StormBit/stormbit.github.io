@@ -25,15 +25,16 @@ pygments: false
 
 # if you change the indents here, also fix it in the Rakefile!
 people:
-  amethyst:
-    name: Amethyst
-    email:
-    nick: amethyst
-    website:
-    twitter:
-    gravatar:
-    location:
-    role:
+# removed amethyst temporarily.
+#  amethyst:
+#    name: Amethyst
+#    email:
+#    nick: amethyst
+#    website:
+#    twitter:
+#    gravatar:
+#    location:
+#    role:
   antoligy:
     name: Alex Wilson
     email: alex.w@stormbit.net
@@ -66,23 +67,33 @@ people:
     email: clarjon1@xfilescabinet.com
     nick: clarjon1
     website: http://xfilescabinet.com/
-    twitter:
+    twitter: 
     gravatar: 8c9d9726112273515de7113661afcc48
     location: Ontario, Canada
     role: Network Technician
   dj_arghlex:
     name: Alex Mitchell
-    email:
+    email: arghargh200@gmail.com
     nick: dj_arghlex
     website: http://arghlex.net/
-    twitter:
-    gravatar:
+    twitter: arghargh200
+    gravatar: fbc7ed8937b3248df7bdf6609238e417
     location: Washington, USA
     role: Network Technician
+  lymia:
+    name: Lymia Alusyia
+    email: lymia@lymiahugs.com
+    nick: lymia
+    website: http://lymiahugs.com/
+    twitter: 
+    gravatar: 84a2da5282611da98ffff005edf17ec3
+    location: Western Hemisphere, Earth
+    role: Network Administrator
   mikotohe2:
     name: Lucy Firman
     email: lucy.f@stormbit.net
     nick: lucy
+    website: 
     twitter: mikotohe2
     gravatar: 32704faf83d4752c5cec2e918557409b
     location: Essex, England
@@ -93,16 +104,16 @@ people:
     nick: reimuhakurei
     website: http://reimuhakurei.net/
     twitter: kudo147
-    gravatar:
+    gravatar: ae9927c9117d5a9002fd55d941ee62bc
     location: Indiana, USA
     role: Network Administrator
   rikai:
-    name: Mathew Rupp
-    email:
+    name: Rikairchy Albright
+    email: admin@rikairchy.net
     nick: rikai
     website: http://rikairchy.net/
-    twitter:
-    gravatar:
+    twitter: rikairchy
+    gravatar: e2cdc74a1cc259dcb43819a71082905a
     location: North Carolina, USA
     role: Network Technician
   tiffany:
