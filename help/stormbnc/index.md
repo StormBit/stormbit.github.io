@@ -1,6 +1,7 @@
 ---
 layout: page
 title: StormBit Bouncer Service
+published: true
 ---
 
 ## What It Is ##

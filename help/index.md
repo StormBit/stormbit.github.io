@@ -24,5 +24,5 @@ published: true
 - [#StormBit on irc.stormbit.net](//webchat.stormbit.net/stormbit) ([or in your
    own client](irc://irc.stormbit.net/stormbit)) - StormBit's network IRC channel. Feel free to ask for help here, but be patient and polite! People chat here, too.
 - [Forums](//discuss.stormbit.net) - StormBit discussion forums. If you need more detailed help then you can reach the staff on the forums. A member of staff will get back to you as soon as possible.  
-- [Bouncer]({{ site.base }}help/stormbnc.html) - Help and useful information regarding our own IRC bouncer service, StormBNC.
+- [Bouncer]({{ site.base }}help/stormbnc) - Help and useful information regarding our own IRC bouncer service, StormBNC.
 - [email](mailto:abuse@stormbit.net) - If you've got a problem or information regarding abuse of our services or suspect that someone else is causing problems, don't be afraid to send an email to us here. 
