@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Connecting to the StormBit Bouncer Service
+title: Connecting to StormBNC
+subtitle: Use our service, dawg.
 ---
 
 ### Configuring Your User: ###
