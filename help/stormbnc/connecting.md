@@ -1,7 +1,7 @@
---
+---
 layout: page
 title: Connecting to the StormBit Bouncer Service
---
+---
 
 ### Configuring Your User: ###
 
