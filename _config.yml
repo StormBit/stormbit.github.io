@@ -46,7 +46,6 @@ people:
     role: Network Owner
   angelXwind:
     name: Karen Tsai
-    email: alex.w@stormbit.net
     nick: angelXwind
     website: http://angelxwind.net/
     twitter: angelXwind
@@ -67,7 +66,7 @@ people:
     email: clarjon1@xfilescabinet.com
     nick: clarjon1
     website: http://xfilescabinet.com/
-    twitter: 
+    twitter:
     gravatar: 8c9d9726112273515de7113661afcc48
     location: Ontario, Canada
     role: Network Technician
@@ -85,7 +84,7 @@ people:
     email: lymia@lymiahugs.com
     nick: lymia
     website: http://lymiahugs.com/
-    twitter: 
+    twitter:
     gravatar: 84a2da5282611da98ffff005edf17ec3
     location: Western Hemisphere, Earth
     role: Network Administrator
@@ -93,7 +92,7 @@ people:
     name: Lucy Firman
     email: lucy.f@stormbit.net
     nick: lucy
-    website: 
+    website:
     twitter: mikotohe2
     gravatar: 32704faf83d4752c5cec2e918557409b
     location: Essex, England
