@@ -6,9 +6,12 @@ title: Connecting to the StormBit Bouncer Service
 ### Configuring Your User: ###
 
 To begin configuring your user, navigate to https://hosting.rikairchy.net:5050/
-Input your username and password in the login field ![](http://puu.sh/8pY1i.png)
-On the right, you will see your available configuration options ![](http://puu.sh/8pY4r.png) Select "Your Settings"
-Change your password from the pre-assigned one if you wish. It is recommended you do so. ![](http://puu.sh/8pY65.png)
+Input your username and password in the login field. <div style="text-align:center">![](http://puu.sh/8pY1i.png)</div>
+
+On the right, you will see your available configuration options <div style="text-align:center">![](http://puu.sh/8pY4r.png)</div> Select "Your Settings"
+
+Change your password from the pre-assigned one if you wish. It is recommended you do so. <div style="text-align:center">![](http://puu.sh/8pY65.png)</div>
+
 By default, your nickname, alternate nickname, ident, and Realname are all your ZNC username. You may modify them as you wish
 
 
