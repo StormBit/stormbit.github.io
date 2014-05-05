@@ -28,4 +28,4 @@ restore peace and discussion to the network...
 Thank you based Alex for pushing StormBit, opers and users alike, to make the network a neat place to be. Happy birthday, you're a good egg.
 It wouldn't be a birthday without a birthday present, however.
 
-![](http://a.pomf.se/xlmeue.png)
+![Imgur](http://i.imgur.com/boIKFUl.png)
