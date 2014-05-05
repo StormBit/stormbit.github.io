@@ -9,7 +9,7 @@ A long time ago, in a galaxy far, far away...
 **Stormbit IV: A New Post**  
 
 It is a period of shitslinging. Rebel  
-spaceships, shitstirring from a crappy  
+networks, shitstirring from a crappy  
 channel, have gotten totally rekt by  
 the glorious StormBit Empire.  
 
