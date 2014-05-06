@@ -23,9 +23,9 @@ Alex Wilson sets about to make his opers work more, in
 hope that that can save his channels and  
 restore peace and discussion to the network...  
 
-###Happy Birthday, Alex!  
+####Happy Birthday, Alex!####
 
 Thank you based Alex for pushing StormBit, opers and users alike, to make the network a neat place to be. Happy birthday, you're a good egg.
 It wouldn't be a birthday without a birthday present, however.
 
-![Imgur](http://i.imgur.com/boIKFUl.png)
+[![Imgur](//i.imgur.com/boIKFUlm.png)](//i.imgur.com/boIKFUl.png)
