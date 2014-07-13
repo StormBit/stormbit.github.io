@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
 	<meta charset="utf-8">
 	<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="description" content="{{ site.description }}">
-	<meta name="keywords" content="{{  site.keywords  }}">
-	{% if page.author %}<meta name="author" content="{{ page.author }}">{% endif %}
 	<title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.name }}</title>
+	<meta property="og:title" content="{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.name }}" />
+	<meta itemprop="name" content="{{ site.name }}">
+	<meta property="og:site_name" content="{{ site.name }}" />
+	<meta property="og:type" content="website" />
+
+	<meta name="description" content="{{ site.description }}">
+	<meta itemprop="description" content="{{ site.description }}">
+	<meta property="og:description" content="{{ site.description }}" />
+
+	<meta itemprop="image" content="{{ /img/logo.svg }}">
+	<meta property="og:image" content="/img/logo.svg" />
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@stormbit">
+	<meta name="twitter:title" content="{{ site.name }}">
+	<meta name="twitter:description" content="{{ site.description }}">
+
+	{% if page.author %}
+		{% assign author = site.people[page.author] %}
+		<meta name="author" content="{{ author.name }}">
+		{% if author.gplus %}
+			<link rel="author" href="https://plus.google.com/{{ author.gplus }}/posts"/>
+		{% endif %}
+		{% if author.twitter %}
+			<meta name="twitter:creator" content="{{ author.twitter }}">
+		{% endif %}
+	{% endif %}
+
+	<link rel="publisher" href="https://plus.google.com/+StormbitNet"/>
+	<meta name="keywords" content="{{  site.keywords  }}">
+
 	<link rel="stylesheet" type="text/css" href="{{ site.base }}css/style.css">
 	<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.base }}sitemap.xml">
     <link rel="icon" type="image/png" href="{{ site.base }}img/favicon.png">
