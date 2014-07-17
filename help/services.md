@@ -5,11 +5,10 @@ subtitle: A Vague Overview
 ---
 
 # NickServ #
-NickServ enables you to register your nickname and prevent other users from being stolen or used by
-  other people.
+NickServ enables you to register your nickname and prevent other users from stealing and/or using it.
 
 ## `/msg NickServ REGISTER username password email@example.com` ##
-Register an account on NickServ.  Also automatically groups your current nick.
+Register an account on NickServ. Also automatically groups your current nick.
 
 ## `/msg NickServ IDENTIFY username password` ##
 Logs in to an account on NickServ.  You can leave off your account username if your current nick is
