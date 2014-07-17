@@ -8,8 +8,8 @@ subtitle: Who Are We?
 First and foremost, StormBit is an IRC network.  That means we host secure chatrooms for individuals and
   communities on our international network of servers.
 
-Whether you're an individual, or represent an internet community, we believe we can fulfil your hosting needs
-  and indeed if you take the time to get in touch with us, you'll find us very flexible in our ability to 
+Whether you're an individual or represent an internet community, we believe we can fulfil your hosting needs
+  and if you take the time to get in touch with us, you'll find us very flexible in our ability to 
   support the growth of communities.
 
 
