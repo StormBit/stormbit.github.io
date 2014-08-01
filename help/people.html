@@ -2,11 +2,13 @@
 layout: default
 title: People
 ---
+<section class="lead people">
+	<h1>StormBit Staff</h1>
+</section>
 
-<ul class="people">
 {% for person in site.people %}
 	{% assign who = person[0] %}
-	<li>{% include person.html person=who size="big" %}</li>
+	<div class="container">
+	{% include person.html person=who size="big" %}
+	</div>
 {% endfor %}
-</ul>
-<div style="clear: both;"></div>

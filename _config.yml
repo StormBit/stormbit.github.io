@@ -6,7 +6,7 @@ paginate: 3,
 paginate_path: /page:num
 
 url: http://stormbit.net/
-base: http://stormbit.net/
+base: /
 tld: stormbit.net
 
 permalink: /:year/:month/:day/:title.html
