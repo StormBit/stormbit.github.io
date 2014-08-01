@@ -6,9 +6,9 @@ title: People
 	<h1>StormBit Staff</h1>
 </section>
 
+<div class="container">
 {% for person in site.people %}
 	{% assign who = person[0] %}
-	<div class="container">
 	{% include person.html person=who size="big" %}
-	</div>
 {% endfor %}
+</div>

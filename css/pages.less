@@ -10,16 +10,17 @@ section.lead {
 
 	h1, p {
 		padding: 0 0 0 @line-height;
-		clear: both;
 	}
 	h1 {
 		float: left;
+		width: 1024px;
 	}
 	h2 {
-		clear: none;
 		color: hsl(0, 0%, 70%);
 		float: right;
 		text-align: right;
+		overflow: hidden;
+		margin-top: -2em;
 	}
 	.chat-now {
 		background-color: hsl(0, 0%, 70%);
@@ -52,7 +53,6 @@ section.lead {
 		color: hsl(0, 0%, 70%);
 		float: right;
 		font-size: 0.8em;
-		margin-bottom: @line-height;
 		margin-left: @line-height;
 		min-width: 125px;
 		text-align: center;
@@ -96,42 +96,46 @@ section.forums {
 	}
 }
 
-section.person, address, .person {
+section.person {
+	background-color: hsl(0, 0%, 80%);
+	border-radius: 5px;
+	margin: @line-height;
+	min-width: 50%;
+	padding: @line-height;
 }
+
+// address, .person {
+// }
 
 section.paginator {
 	background-color: #1a1a1a;
+	border-bottom: 1px solid #292929;
 	color: #fff;
+	font-family: 'Font Awesome', FontAwesome, none;
 	height: 80px;
 	overflow: hidden;
 	padding: 0 @line-height;
 	text-align: center;
-	font-family: 'Font Awesome', FontAwesome, none;
 	.page-newer, .page-older {
 		font-size: (2 * @font-size);
 		line-height: (2 * @line-height);
 		color:#999;
-		margin:0 20px;
+		margin: (@line-height / 2);
+		padding: (@line-height / 2);
 		vertical-align: middle;
 		display: inline-block;
 		height: 40px;
 		width: 40px;
 		transition:color .2s;
 	}
-	a .page-newer { float: right; }
-	a .page-older { float: left; }
-	.top {
-		border-bottom: 1px solid #262626;
-	}
-	.bottom {
-		border-top: 1px solid #262626;
-	}
-	a .page-newer:hover {
+	.page-newer { float: left; }
+	.page-older { float: right; }
+	.page-newer:hover {
 		color: #eee;
 		border: 0;
 	}
-	a .page-older.disabled, a .page-newer.disabled,
-	a .page-older .disabled:hover, a .page-newer .disabled:hover {
+	.page-older.disabled, .page-newer.disabled,
+	.page-older .disabled:hover, .page-newer .disabled:hover {
 		color:#222;
 		cursor:default;
 	}
