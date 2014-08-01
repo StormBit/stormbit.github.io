@@ -23,6 +23,14 @@ redcarpet:
  ]
 pygments: false
 
+exclude:
+- 'vendor' # for vendored gems
+- 'Gemfile'
+- 'Gemfile.lock'
+- 'Rakefile'
+- 'Gruntfile.js'
+- 'package.json'
+
 # if you change the indents here, also fix it in the Rakefile!
 people:
 # removed amethyst temporarily.
