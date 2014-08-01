@@ -68,27 +68,42 @@
 		{{ content }}
 	</div>
 	<footer>
-		<h4>About</h4>
-		<ul class="list-inline">
-			<li><a href="{{ site.base }}help/people.html">People</a></li>
-			<li><a href="{{ site.base }}help/policies.html">Policies</a></li>
-			<li><a href="{{ site.base }}help/">Help</a></li>
-		</ul>
-		<h4>IRC</h4>
-		<ul class="list-inline">
-			<li><a href="//webchat.{{ site.tld }}/">Web Chat</a></li>
-			<li><a href="{{ site.base }}help/connect.html">Connection Info</a></li>
-			<li><a href="{{ site.base }}help/services.html">Services</a></li>
-		</ul>
-		<h4>Forums</h4>
-		<ul class="list-inline">
-			<li>{% include forumlink.html category="gaming" title="Video Games" %}</li>
-			<li>{% include forumlink.html category="tech" title="Computers and Technology" %}</li>
-			<li>{% include forumlink.html category="general" title="General Discussion" %}</li>
-		</ul>
-		<p>&copy; {{ site.time | date: "%Y" }} {{ site.name }}
-		<p><a href="{{ site.github.repository_url }}">Source on GitHub</a> ({{ site.github.build_revision }})
-		<p>Made with <a href="https://github.com/twbs/bootstrap">Twitter Bootstrap</a>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h4>About</h4>
+					<ul class="list">
+						<li><a href="{{ site.base }}help/people.html">People</a></li>
+						<li><a href="{{ site.base }}help/policies.html">Policies</a></li>
+						<li><a href="{{ site.base }}help/">Help</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h4>IRC</h4>
+					<ul class="list">
+						<li><a href="//webchat.{{ site.tld }}/">Web Chat</a></li>
+						<li><a href="{{ site.base }}help/connect.html">Connection Info</a></li>
+						<li><a href="{{ site.base }}help/services.html">Services</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h4>Forums</h4>
+					<ul class="list">
+						<li>{% include forumlink.html category="gaming" title="Video Games" %}</li>
+						<li>{% include forumlink.html category="tech" title="Computers and Technology" %}</li>
+						<li>{% include forumlink.html category="general" title="General Discussion" %}</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<p>&copy; {{ site.time | date: "%Y" }} {{ site.name }}
+					{% if site.github %}<p><a href="{{ site.github.repository_url }}">Source on GitHub</a> ({{ site.github.build_revision }}){% endif %}
+					<p>Made with <a href="https://github.com/twbs/bootstrap">Twitter Bootstrap</a>
+				</div>
+			</div>
+		</div>
 	</footer>
 
 	<!-- Made with love by Nuck -->
