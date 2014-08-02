@@ -16,7 +16,9 @@ published: true
 
 
 - [IRC Commands](inspircd.html) - A list of useful commands for newbies and IRC veterans alike that will help you get by on IRC.
-- [Services](services.html) - A brief introduction on usage of our services, such as NickServ's nickname registration and ChanServ's channel registration.
+- [Basic Services](services.html) - A brief introduction on usage of our services, such as NickServ's nickname registration and ChanServ's channel registration.
+- [Channel Management](channel.html) - A guide to running a large channel, based on personal experience with channel management.
+- [Advanced Services](atheme/index.html) - A complete guide to using the Atheme 7.1 IRC services package.
 
 # Network Help
  Need help with something not covered on this page? Don't be afraid to ask staff or a fellow user for help in any of the following places:
