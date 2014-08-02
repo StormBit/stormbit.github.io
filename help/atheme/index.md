@@ -446,7 +446,7 @@ Note: You must have at least be able to view the access list in order to do this
 <a name="NickServ"></a>
 ###NickServ
 **Purpose**: Maintain nick ownership and allows users to modify/verify nick information  
-**Command**s: acc, access, cert, drop, fdrop, freeze, fungroup, fverify, ghost, group, hold, identify, info, list, listchans, listmail, listownmail, listvhost, login, logout, mark, regain, register, regnolimit, release, resetpass, restrict, return, sendpass, set, setpass, status, taxonomy, ungroup, vacation, verify, vhost  
+**Commands**: acc, access, cert, drop, fdrop, freeze, fungroup, fverify, ghost, group, hold, identify, info, list, listchans, listmail, listownmail, listvhost, login, logout, mark, regain, register, regnolimit, release, resetpass, restrict, return, sendpass, set, setpass, status, taxonomy, ungroup, vacation, verify, vhost  
 **HowTo**:  
 
 Determine if an account exists: _/msg nickserv acc doyouexist *_  
@@ -703,4 +703,4 @@ Disclaimer: __DO NOT USE LIGHTLY__
 Save the services database: */msg operserv update*
 
 View the services runtime: */msg operserv uptime*
-View the services runtime: */msg operserv uptime*
+
