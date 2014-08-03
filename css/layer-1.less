@@ -1,0 +1,60 @@
+/***********************************************/
+/**************** LAYER 1 STYLES ***************/
+/***********************************************/
+.navbar {
+	.dark;
+
+	nav > ul {
+		width: 100%;
+		display: flex;
+		align-items: stretch;
+	}
+}
+.navbar-header {
+	color: rgba(171, 171, 171, 0.5);
+	height: 50px;
+	text-shadow: 0 0 0 #ABABAB;
+	text-transform: uppercase;
+
+	li {
+		border: 0px solid #262626;
+		border-left-width: 1px;
+		width: 10%;
+		
+		a {
+			display: block;
+			height: 100%;
+			padding-top: 16px;
+			text-align: center;
+			width: 100%;
+		}
+		a:hover {
+			.dark;
+		}
+	}
+	li:last-child,
+	li.logo {
+		border-right-width: 1px;
+	}
+	li.logo {
+		margin-right: auto;
+		width: auto;
+
+		a {
+			padding: 0;
+		}
+		img {
+			border: none;
+			display: block;
+		}
+	}
+	ul.horizontal {
+		height: 50px;
+	}
+}
+.navbar-footer {
+	ul.horizontal > li {
+		width: (100% / 3);
+	}
+}
+
