@@ -13,17 +13,17 @@ There are a number of reasons why this block may have been placed. You may have 
 ##Common Ban Reasons
 In short, you __may__ have:
 
-Threatened, stalked, or abused a user in some way, shape, or form.
+- Threatened, stalked, or abused a user in some way, shape, or form.
 
-Withheld information you were legally required to share with StormBit.
+- Withheld information you were legally required to share with StormBit.
 
-Evaded ignores or bans.
+- Evaded ignores or bans.
 
-Created a channel for the explicit purpose of attacking a user or organization, even if they are not a participant of StormBit's IRC network.
+- Created a channel for the explicit purpose of attacking a user or organization, even if they are not a participant of StormBit's IRC network.
 
-Abused services in a manner that disrupted user activities or threatened the integrity of the network.
+- Abused services in a manner that disrupted user activities or threatened the integrity of the network.
 
-Another possibility, especially on mobile/cellular phones with highly dynamic IPs, is you have "inherited" an IP address that was previously blocked.
+- Another possibility, especially on mobile/cellular phones with highly dynamic IPs, is you have "inherited" an IP address that was previously blocked.
 
 This list is not all-inclusive. The actual ban reason will be included in the message directing you to this page.
 
