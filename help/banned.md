@@ -33,7 +33,4 @@ There are a few ways to appeal a network-wide ban. One of the ways __is not__ ev
 
 You should:  
 send an email to [abuse@stormbit.net](mailto:abuse@stormbit.net)  
-Create a forum post on our [forums](http://discuss.stormbit.net)  
-Send a tweet [@StormBit](https://twitter.com/StormBit)  
-Drop us a message on [G+](https://plus.google.com/+StormbitNet/about)
-
+Create a forum post on our [forums](http://discuss.stormbit.net)
