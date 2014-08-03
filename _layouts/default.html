@@ -47,20 +47,22 @@
 </head>
 <body>
 	<div class="navbar navbar-header">
-		<nav class="container"><ul>
-			<li class="logo"><a href="{{site.base}}"><img src="{{ site.base }}img/logo.svg" height=50 alt="{{ site.name }}"></a></li>
-			<li><a href="//webchat.{{ site.tld }}/">Chat</a></li>
-			<li><a href="//discuss.{{ site.tld }}/">Forum</a></li>
-			<li><a href="{{ site.base }}help/">Help</a></li>
-			<li><a href="{{ site.base }}help/about.html">About</a></li>
-		</ul></nav>
+		<nav class="midwidth">
+			<ul class="horizontal">
+				<li class="logo"><a href="{{site.base}}"><img src="{{ site.base }}img/logo.svg" height=50 alt="{{ site.name }}"></a></li>
+				<li><a href="//webchat.{{ site.tld }}/">Chat</a></li>
+				<li><a href="//discuss.{{ site.tld }}/">Forum</a></li>
+				<li><a href="{{ site.base }}help/">Help</a></li>
+				<li><a href="{{ site.base }}help/about.html">About</a></li>
+			</ul>
+		</nav>
 	</div>
-	<div id="page" class="container">
+	<div id="page" class="midwidth">
 		{{ content }}
 	</div>
 	<div class="navbar navbar-footer">
-		<div class="container">
-			<nav><ul>
+		<nav class="midwidth">
+			<ul class="horizontal">
 				<li><h1>About</h1><ul>
 					<li><a href="{{ site.base }}help/people.html">People</a></li>
 					<li><a href="{{ site.base }}help/policies.html">Policies</a></li>
@@ -76,10 +78,10 @@
 					<li>{% include forumlink.html category="tech" title="Computers and Technology" %}</li>
 					<li>{% include forumlink.html category="general" title="General Discussion" %}</li>
 				</ul></li>
-			</ul></nav>
-			<div class="copyright">&copy; {{ site.time | date: "%Y" }} {{ site.name }}</div>
-			<div class="source"><a href="{{ site.github.repository_url }}">Source on GitHub</a> ({{ site.github.build_revision | truncate 7, '' }})</div>
-		</div>
+			</ul>
+		</nav>
+		<div class="copyright">&copy; {{ site.time | date: "%Y" }} {{ site.name }}</div>
+		<div class="source"><a href="{{ site.github.repository_url }}">Source on GitHub</a> ({{ site.github.build_revision | truncate 7, '' }})</div>
 	</div>
 
 	<!-- Made with love by Nuck -->

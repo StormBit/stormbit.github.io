@@ -1,15 +1,51 @@
 /***********************************************/
-/**************** LAYER 1 STYLES ***************/
+/************ LAYER 1 LAYOUT STYLES ************/
 /***********************************************/
+@import url("settings.less");
+@import url("mixins.less");
+
+/*** GENERICS ***/
+/* BODY */
+body,
+html {
+	.zero;
+	.font;
+}
+/* NAVBAR */
 .navbar {
 	.dark;
 
-	nav > ul {
-		width: 100%;
-		display: flex;
-		align-items: stretch;
+	border-bottom-width: 1px;
+	position: relative;
+	width: 100%;
+}
+nav {
+	.font-head;
+	.box-sizing(content-box);
+	.columns-container;
+
+	ul {
+		.zero;
+
+		list-style: none;
 	}
 }
+ul.horizontal {
+	.flexbox;
+
+	align-items: stretch;
+}
+ul.vertical {
+	display: block;
+}
+/*  MIDWIDTH */
+.midwidth {
+	margin: 0 auto;
+	max-width: 1024px;
+	width: 100%;
+}
+
+/*** SPECIFICS ***/
 .navbar-header {
 	color: rgba(171, 171, 171, 0.5);
 	height: 50px;
@@ -47,9 +83,6 @@
 			border: none;
 			display: block;
 		}
-	}
-	ul.horizontal {
-		height: 50px;
 	}
 }
 .navbar-footer {
