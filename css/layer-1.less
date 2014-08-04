@@ -10,6 +10,14 @@ body,
 html {
 	.zero;
 	.font;
+
+	background: url('../img/bg.png');
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+body > * {
+	flex-shrink: 0;
 }
 /* NAVBAR */
 .navbar {
@@ -86,8 +94,21 @@ ul.vertical {
 	}
 }
 .navbar-footer {
-	ul.horizontal > li {
-		width: (100% / 3);
+	ul.horizontal {
+		width: 100%;
+		&> li {
+			flex: 1;
+		}
+	}
+	.copyright,
+	.source {
+		text-align: center;
 	}
 }
-
+.page {
+	background-color: hsl(0, 0%, 95%);
+	box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+	flex-grow: 1;
+	min-height: calc(100% - 211px);
+	overflow: hidden;
+}
