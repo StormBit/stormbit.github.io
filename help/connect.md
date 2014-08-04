@@ -28,6 +28,7 @@ ReimuNET                | irc.reimuhakurei.net   | Atlanta, Georgia, United Stat
 xfcab                   | irc.xfcab.com          | Seattle, Washington, United States |
 FALLOUT                 | fallout.stormbit.net   | Nürnberg, Germany                  |
 Ridley                  | ridley.stormbit.net    | Kent, England, United Kingdom      |
+Shizune                 | shizune.stormbit.net   | Auckland, New Zealand              |
 
 All StormBit servers listen on ports 6667 and 6697 (SSL).
 
