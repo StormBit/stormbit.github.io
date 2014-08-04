@@ -50,8 +50,7 @@ end
 
 desc 'Create a new user in the config file'
 task :adduser do
-  config = File.read('./_config.yml')
-  splat = config.split "people:\n"
+  config = File.read('./_data/people.yml')
 
   puts 'Creating new user:'
   username = ask 'username?'
@@ -64,19 +63,19 @@ task :adduser do
   location = ask 'Location?'
   role = ask 'Job Title?'
 
-  File.write('./_config.yml', splat.join(<<-NEWUSER
-people:
-  #{username}:
-    name: #{realname}
-    email: #{email}
-    nick: #{nick}#{
-    if not website.empty? then "
-    website: #{website}"
-    end}
-    twitter: #{twitter}
-    gravatar: #{Digest::MD5.hexdigest(gravatar.empty? ? email : gravatar)}
-    location: #{location}
-    role: #{role}
+  File.write('./_data/people.yml', <<-NEWUSER
+#{config}
+#{username}:
+  name: #{realname}
+  email: #{email}
+  nick: #{nick}#{
+  if not website.empty? then "
+  website: #{website}"
+  end}
+  twitter: #{twitter}
+  gravatar: #{Digest::MD5.hexdigest(gravatar.empty? ? email : gravatar)}
+  location: #{location}
+  role: #{role}
 NEWUSER
-  ))
+  )
 end

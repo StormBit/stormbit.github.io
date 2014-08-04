@@ -23,7 +23,7 @@
 	<meta name="twitter:description" content="{{ site.description }}">
 
 	{% if page.author %}
-		{% assign author = site.people[page.author] %}
+		{% assign author = site.data.people[page.author] %}
 		<meta name="author" content="{{ author.name }}">
 		{% if author.gplus %}
 			<link rel="author" href="https://plus.google.com/{{ author.gplus }}/posts"/>

@@ -4,7 +4,7 @@ title: People
 ---
 
 <ul class="people">
-{% for person in site.people %}
+{% for person in site.data.people %}
 	{% assign who = person[0] %}
 	<li>{% include person.html person=who size="big" %}</li>
 {% endfor %}

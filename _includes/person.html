@@ -1,4 +1,4 @@
-{% assign _person = site.people[include.person] %}
+{% assign _person = site.data.people[include.person] %}
 
 {% if include.size == "big" %}
 <section class="person person-{{ include.person }}" id="person-{{ include.person }}">
