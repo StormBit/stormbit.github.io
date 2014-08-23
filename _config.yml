@@ -21,7 +21,7 @@ redcarpet:
   "tables",
   "strikethrough"
  ]
-pygments: false
+highlighter: null
 
 exclude:
 - 'vendor' # for vendored gems

@@ -1,14 +1,27 @@
 ---
 layout: none
 ---
-
 /* TEAM */
-{% for person in site.people %}
-{% if person.title %}{{ person.title }}{% elsif person.role %}{{ person.role }}{% else %}Friend{% endif %}: {{ person.name }}
-{% if person.site %}Site: {{ person.site }}{% endif %}
-{% if person.twitter %}Twitter: @{{ person.twitter }}{% endif %}
-{% if person.location %}Location: {person.location}{% endif %}
+{% for person in site.people %}{% if person[1].title %}{{ person[1].title }}{% elsif person[1].role %}{{ person[1].role }}{% else %}Friend{% endif %}: {{ person[1].name }}{% if person[1].email %}
+Contact: {{ person[1].email | replace: '@', ' [AT] ' }}{% endif %}{% if person[1].website %}
+Site: {{ person[1].website }}{% endif %}{% if person[1].twitter %}
+Network Username: {{ person[0] }}
+Twitter: @{{ person[1].twitter }}{% endif %}{% if person[1].location %}
+Location: {{ person[1].location }}{% endif %}
+
+{% endfor %}
+
+/* GITHUB CONTRIBUTORS */
+{% for person in site.github.contributors %}
+{{ person.type }}: {{ person.name }}
+{% if person.contact %}Contact: {{ person.email | replace: '@', ' [AT] ' }}
+{% endif %}{% if person.site %}Site: {{ person.site }}
+{% endif %}GitHub Username: {{ person.login }}
+{% if person.location %}Location: {{ person.location }}{% endif %}
+
 {% endfor %}
 
 /* SITE */
 Last update: {{site.time|date: "%Y/%m/%d"}}
+Software: {% for software in site.github.version %}{{ software[0] }} v{{software[1]}}, {% endfor %}
+Repository: {{ site.github.repository_url }}
