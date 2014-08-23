@@ -12,16 +12,13 @@ Location: {{ person[1].location }}{% endif %}
 {% endfor %}
 
 /* GITHUB CONTRIBUTORS */
-{% for person in site.github.contributors %}{{ person.type }}: {{ person.name }}{% if person.email %}
-Contact: {{ person.email | replace: '@', ' [AT] ' }}
-{% endif %}{% if person.blog %}Site: {{ person.blog }}
-{% endif %}GitHub Username: {{ person.login }}
-GitHub Profile: {{ person.html_url }}{% if person.location %}
-Location: {{ person.location }}{% endif %}
+{% for person in site.github.contributors %}
+GitHub Username: {{ person.login }}
+GitHub Profile: {{ person.html_url }}
 
 {% endfor %}
 
 /* SITE */
 Last update: {{site.time|date: "%Y/%m/%d"}}
-Software: {% for software in site.github.versions %}{{ software[0] }} v{{software[1]}}, {% endfor %}
+Software: {% for software in site.github.versions %}{{ software[0] }} v{{software[1]}}{% if forloop.last == false %}, {% endif %}{% endfor %}
 Repository: {{ site.github.repository_url }}
