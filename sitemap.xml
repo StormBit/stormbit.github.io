@@ -28,7 +28,7 @@ layout: none
 		<url>
 			<changefreq>{{ changefreq }}</changefreq>
 			<loc>{{ site.base }}{{ post.url | remove_first: '/' | remove: 'index.html' }}</loc>
-			<lastmod>{{ lastmod | date_to_xmlschema }}</lastmod>
+			<lastmod>{{ lastmod | date: "%Y-%m-%d" }}</lastmod>
 			<priority>{{ priority }}</priority>
 		</url>
 		
@@ -68,7 +68,7 @@ layout: none
 
 			<url>
 				<changefreq>{{ changefreq }}</changefreq>
-				<lastmod>{{ lastmod | date: date_to_xmlschema }}</lastmod>
+				<lastmod>{{ lastmod | date: date: "%Y-%m-%d" }}</lastmod>
 				<loc>{{ site.base }}{{ page.url | remove_first: '/' | remove: 'index.html' }}</loc>
 				<priority>{{ priority }}</priority>
 			</url>
