@@ -4,7 +4,7 @@ layout: none
 
 /* TEAM */
 {% for person in site.people %}
-{% if person.title %}{{ person.title }}{% elseif person.role %}{{ person.role }}{% else %}Friend{% endif %}: {{ person.name }}
+{% if person.title %}{{ person.title }}{% elsif person.role %}{{ person.role }}{% else %}Friend{% endif %}: {{ person.name }}
 {% if person.site %}Site: {{ person.site }}{% endif %}
 {% if person.twitter %}Twitter: @{{ person.twitter }}{% endif %}
 {% if person.location %}Location: {person.location}{% endif %}
