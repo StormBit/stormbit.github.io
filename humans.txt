@@ -12,10 +12,8 @@ Location: {{ person[1].location }}{% endif %}
 {% endfor %}
 
 /* GITHUB CONTRIBUTORS */
-{% for person in site.github.contributors %}
-GitHub Username: {{ person.login }}
+{% for person in site.github.contributors %}GitHub Username: {{ person.login }}
 GitHub Profile: {{ person.html_url }}
-
 {% endfor %}
 
 /* SITE */
