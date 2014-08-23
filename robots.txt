@@ -1,0 +1,9 @@
+---
+layout: none
+---
+
+User-Agent: *
+{% for page in site.pages %}{% if page.url contains '404' %}
+Disallow: /404.html{%endif%}{% endfor%}
+
+Sitemap: http://stormbit.net/sitemap.xml
