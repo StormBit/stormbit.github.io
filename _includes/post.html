@@ -1,11 +1,13 @@
 {% assign display = include.display %}
 {% assign post = include.post %}
+
 {% if include.content %}
-{% assign content = include.content %}
+	{% assign content = include.content %}
 {% else %}
-{% assign content = post.content %}
+	{% assign content = post.content %}
 {% endif %}
-<article class="post-{{ display }}">
+
+<article class="post post-{{ display }}">
 	<header>
 		<h1><a href="{{ site.base }}{{ post.url }}">{{ post.title }}</a></h1>
 		{% include person.html person=post.author size="small" %}

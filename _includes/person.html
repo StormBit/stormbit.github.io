@@ -3,7 +3,7 @@
 {% if include.size == "big" %}
 <section class="person person-{{ include.person }}" id="person-{{ include.person }}">
 	<header>
-		<img src="//www.gravatar.com/avatar/{{ _person.gravatar }}?s=100" alt="avatar">
+		<img src="//www.gravatar.com/avatar/{{ _person.gravatar }}?s=100" alt="avatar" class="avatar">
 		<h2>{{ _person.name }}</h2>
 		<span>{{ _person.role }}</span>
 	</header>
@@ -28,6 +28,9 @@
 </section>
 {% elsif include.size == "small" %}
 <a rel="author" href="about/people.html#person-{{ include.person }}">
+	{% if include.avatar %}
+	<img src="//www.gravatar.com/avatar/{{ _person.gravatar }}?s=20" alt="avatar" class="avatar avatar-mini">
+	{% endif %}
 	<address class="person person-{{ include.person }}">
 		{{ _person.name }}
 	</address>

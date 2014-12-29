@@ -8,7 +8,7 @@ layout: none
 		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
 		<link rel="alternate">{{ site.url }}</link>
 		<atom:link href="{{ site.url }}feed.xml" rel="self" />
-		<rights>Copyright (C) 2011-2014 The StormBit IRC Network</rights>
+		<rights>Copyright &copy; 2011-2015 The StormBit IRC Network</rights>
 		{% for post in site.posts limit:15 %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
