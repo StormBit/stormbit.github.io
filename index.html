@@ -4,13 +4,13 @@ layout: default
 {% if paginator.page > 1 %}
 	<section class="paginator top">
 		{% if paginator.previous_page %}
-			<a href="{{site.base}}{{ paginator.previous_page_path }}" class="page-newer">&#xF021;</a>
+		<a href="{% if site.base == '/' %}{% else %}{{ site.base }}{% endif %}{{ paginator.previous_page_path }}" class="page-newer">&#xF021;</a>
 		{% else %}
 			<a class="page-newer disabled">&#xF021;</a>
 		{% endif %}
 		<h1>Page {{ paginator.page }} of {{ paginator.total_pages }}</h1>
 		{% if paginator.next_page %}
-			<a href="{{site.base}}{{ paginator.next_page_path }}" class="page-older">&#xF022;</a>
+			<a href="{{ site.base }}{{ paginator.next_page_path }}" class="page-older">&#xF022;</a>
 		{% else %}
 			<a class="page-older disabled">&#xF022;</a>
 		{% endif %}
@@ -21,7 +21,7 @@ layout: default
 		<h1>Welcome to StormBit</h1>
 		<a href="//webchat.{{ site.tld }}" class="chat-now">Chat Now</a>
 		<a href="{{ site.base }}help/connect.html" class="chat-eventually">or connect manually</a>
-		<p>StormBit is an IRC network dedicated to anything you can think of: from open source projects, to video games, to anime culture, we have a little of every community, so you can feel right at home.  We also strongly believe in free speech and take a very hands-off approach to moderation, so if you can't find a channel that suits you, come on and make one!</p>
+		<p>{{ site.description }}
 	</section>
 {% endif %}
 {{ site.pagination_path }}
