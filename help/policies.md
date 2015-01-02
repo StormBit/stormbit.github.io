@@ -22,8 +22,8 @@ As a StormBit user, you are expected to respect other users and network staff.
 - Evading ignores or bans.
 - Making channels to attack others (even non-users of the network).
 - Abusing services to attack or disrupt other users.
-- Being a dick, as a
-  [Wikipedian so kindly put it](http://meta.wikimedia.org/wiki/Don't_be_a_dick).
+- Being a jerk, as a
+  [Wikipedian so kindly put it](http://meta.wikimedia.org/wiki/Don't_be_a_jerk).
 
 # Guidelines for staff:
 
