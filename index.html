@@ -1,27 +1,27 @@
 ---
 layout: default
 ---
-{% if paginator.page > 1 %}
-	<section class="paginator top">
-		{% if paginator.previous_page %}
-		<a href="{% if site.base == '/' %}{% else %}{{ site.base }}{% endif %}{{ paginator.previous_page_path }}" class="page-newer">&#xF021;</a>
-		{% else %}
-			<a class="page-newer disabled">&#xF021;</a>
-		{% endif %}
-		<h1>Page {{ paginator.page }} of {{ paginator.total_pages }}</h1>
-		{% if paginator.next_page %}
-			<a href="{{ site.base }}{{ paginator.next_page_path }}" class="page-older">&#xF022;</a>
-		{% else %}
-			<a class="page-older disabled">&#xF022;</a>
-		{% endif %}
-	</section>
-{% endif %}
+
 {% if paginator.page == 1 %}
 	<section class="lead home">
 		<h1>Welcome to StormBit</h1>
 		<a href="//webchat.{{ site.tld }}" class="chat-now">Chat Now</a>
-		<a href="{{ site.base }}help/connect.html" class="chat-eventually">or connect manually</a>
+		<a href="{{ site.baseurl }}help/connect.html" class="chat-eventually">or connect manually</a>
 		<p>{{ site.description }}
+	</section>
+{% elsif paginator.page > 1 %}
+	<section class="paginator top">
+		{% if paginator.previous_page %}
+		<a href="{{ site.baseurl }}{{ paginator.previous_page_path | remove_first: '/' | remove: 'index.html' }}" class="page-newer fa-arrow-left"></a>
+		{% else %}
+			<a class="page-newer fa-arrow-left disabled"></a>
+		{% endif %}
+		<h1>Page {{ paginator.page }} of {{ paginator.total_pages }}</h1>
+		{% if paginator.next_page %}
+			<a href="{{ paginator.next_page_path }}" class="page-older fa-arrow-right"></a>
+		{% else %}
+			<a class="page-older fa-arrow-right disabled"></a>
+		{% endif %}
 	</section>
 {% endif %}
 {{ site.pagination_path }}
@@ -49,7 +49,7 @@ layout: default
 		<section class="paginator bottom">
 			<h1>Page {{ paginator.page }} of {{ paginator.total_pages }}</h1>
 			{% if paginator.next_page %}
-				<a href="{{ paginator.next_page_path | replace: '//', '/' }}" class="page-older">&#xF022;</a>
+				<a href="{{ paginator.next_page_path | replace: '//', '/' }}" class="page-older fa-arrow-right"></a>
 			{% endif %}
 		</section>
 	{% endif %}
