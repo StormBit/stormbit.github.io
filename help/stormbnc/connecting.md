@@ -10,14 +10,14 @@ subtitle: Use our service, dawg.
 
 - To begin configuring your user, navigate to
   <a href="https://hosting.rikairchy.net:5050/">https://hosting.rikairchy.net:5050/</a>
-  and input your username and password in the login field. 
-  <div class="image">![](http://puu.sh/8pY1i.png)</div>
+  and input your username and password in the login field.
+  ![](http://puu.sh/8pY1i.png)
 - On the right, you will see your available configuration options.
-  <div class="image">![](http://puu.sh/8pY4r.png)</div>
+  ![](http://puu.sh/8pY4r.png)
 - Select "Your Settings".
 - Change your password from the pre-assigned one if you wish.
   It is recommended you do so. 
-  <div class="image">![](http://puu.sh/8pY65.png)</div>
+  ![](http://puu.sh/8pY65.png)
 - By default, your nickname, alternate nickname, ident, and Realname are all
   your ZNC username. You may modify them as you wish.
 
@@ -61,7 +61,7 @@ we will not be able to provide instructions for them all.
    If you use port 5050, check both SSL-related blocks.
 3. Under the Password section, use the following format: User/Network:Password
 
-## <a name="irssi">Setting up Irssi with ZNC:</a>
+## <a name="irssi">Setting up Irssi with ZNC</a>
 
     /network add StormBNC
     /server add -network StormBNC -ssl hosting.rikairchy.net 5050 Username:Password
@@ -77,7 +77,7 @@ we will not be able to provide instructions for them all.
    use the format User/Network:Password
 5. Select Done and save your changes.
 
-## <a name="mirc">Setting up mIRC with ZNC:</a>
+## <a name="mirc">Setting up mIRC with ZNC</a>
 
 To connect once, simply use the format:
 

@@ -55,6 +55,9 @@ Either submit the form below, or ask in
 [#stormbnc on irc.stormbit.net](irc://irc.stormbit.net:6667/#stormbnc)
 to get a free ZNC account!
 
+# Setting up
+Check out our [connection info page](connecting.html) for more info.
+
 <iframe src="https://docs.google.com/forms/d/1yPuzIQj04rgRHST0JLg3aJ-m_nvCPY09Cqke1UvNtu8/viewform?embedded=true"
   width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
 Loading registration form...
