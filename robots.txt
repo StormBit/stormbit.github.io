@@ -5,4 +5,4 @@ layout: none
 User-Agent: *
 Disallow: /404.html
 
-Sitemap: http://{{ site.tld }}/sitemap.xml
+Sitemap: http://{{ site.url }}/sitemap.xml

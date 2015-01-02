@@ -11,7 +11,7 @@ don't want to bother with the extra features a dedicated client provides.
 - [Connection Info](connect.html) - The information you'll need to connect to
   StormBit from your choice of IRC client.
 - Alternatively, you can connect to StormBit quickly using our
-  [web client](//webchat.{{ site.tld }}).
+  [web client](//webchat.{{ site.url }}).
 
 # Navigating IRC
 
