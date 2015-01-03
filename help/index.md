@@ -21,6 +21,8 @@ New to IRC, or just need a refresher? The links below should help you out.
   IRC veterans alike that will help you get by on IRC.
 - [Services](services.html) - A brief introduction on usage of our services,
   such as NickServ's nickname registration and ChanServ's channel registration.
+- [Managing A Channel](channel.html) - Some tips for effectively managing your
+  channel.
 
 # Network Help
 Need help with something not covered on this page? Don't be afraid to ask
