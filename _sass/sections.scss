@@ -1,19 +1,19 @@
 // Settings
-@import url("settings.less");
+@import "settings";
 
 section.lead {
 	background-color: hsl(0, 0%, 10%);
 	color: white;
-	font-size: (@font-size + 2);
-	margin-bottom: @line-height;
+	font-size: ($font-size + 2);
+	margin-bottom: $line-height;
 	overflow: hidden;
-	padding: @line-height;
+	padding: $line-height;
 	p {
-		padding: 0 0 0 @line-height;
+		padding: 0 0 0 $line-height;
 	}
 	h1 {
 		float: left;
-		padding: 0; /* maybe (@line-height / 4) ??? */
+		padding: 0; /* maybe ($line-height / 4) ??? */
 		width: 60%;
 	}
 	h2 {
@@ -29,13 +29,13 @@ section.lead {
 		border-radius: 4px;
 		color: hsl(0, 0%, 0%);
 		float: right;
-		font-family: @font-family;
-		margin-left: @line-height;
+		font-family: $font-family;
+		margin-left: $line-height;
 		min-width: 125px;
-		padding: @line-height 0;
+		padding: $line-height 0;
 		text-align: center;
 		text-transform: uppercase;
-		transition: background .25s;
+		transition: background 25s;
 		@media only screen and (max-width: 450px) {
 			margin: 10px 0px;
 			width: 100%;
@@ -57,10 +57,10 @@ section.lead {
 		color: hsl(0, 0%, 70%);
 		float: right;
 		font-size: 0.8em;
-		margin-left: @line-height;
+		margin-left: $line-height;
 		min-width: 125px;
 		text-align: center;
-		transition: color .25s;
+		transition: color 25s;
 	}
 	.chat-eventually:hover, .chat-eventually:active {
 		border: none;
@@ -91,8 +91,8 @@ section.forums {
 	background-color: hsl(0, 0%, 80%);
 	border-radius: 5px;
 	float: right;
-	margin: @line-height;
-	padding: @line-height;
+	margin: $line-height;
+	padding: $line-height;
 
 	iframe {
 		display: block;
@@ -102,9 +102,9 @@ section.forums {
 section.person {
 	background-color: hsl(0, 0%, 80%);
 	border-radius: 5px;
-	margin: @line-height;
+	margin: $line-height;
 	max-width: 250px;
-	padding: @line-height;
+	padding: $line-height;
 }
 
 section.paginator {
@@ -113,20 +113,20 @@ section.paginator {
 	color: #fff;
 	height: 80px;
 	overflow: hidden;
-	padding: 0 @line-height;
+	padding: 0 $line-height;
 	text-align: center;
 	.page-newer, .page-older {
 		font-family: 'Font Awesome', FontAwesome, none;
-		font-size: (2 * @font-size);
-		line-height: (2 * @line-height);
+		font-size: (2 * $font-size);
+		line-height: (2 * $line-height);
 		color:#999;
-		margin: (@line-height / 2);
-		padding: (@line-height / 2);
+		margin: ($line-height / 2);
+		padding: ($line-height / 2);
 		vertical-align: middle;
 		display: inline-block;
 		height: 40px;
 		width: 40px;
-		transition:color .2s;
+		transition:color 2s;
 		text-decoration: none;
 	}
 	.page-newer { float: left; }
@@ -148,7 +148,7 @@ section.paginator {
 section a {
 	color: #191919;
 	display: inline-block;
-	transition: all .25s;
+	transition: all 25s;
 }
 
 section a:hover {

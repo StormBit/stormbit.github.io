@@ -16,3 +16,7 @@ paginate_path: /page:num
 title: StormBit IRC Network
 twitter: stormbit
 url: stormbit.net
+sass:
+  style: compressed
+gems:
+    - jekyll-sitemap
