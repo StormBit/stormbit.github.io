@@ -8,12 +8,12 @@ section.lead {
 	margin-bottom: @line-height;
 	overflow: hidden;
 	padding: @line-height;
-
-	h1, p {
+	p {
 		padding: 0 0 0 @line-height;
 	}
 	h1 {
 		float: left;
+		padding: 0; /* maybe (@line-height / 4) ??? */
 		width: 60%;
 	}
 	h2 {
@@ -138,4 +138,14 @@ section.paginator {
 	h1 {
 		display: inline-block;
 	}
+}
+
+section a {
+	color: #191919;
+	display: inline-block;
+	transition: all .25s;
+}
+
+section a:hover {
+	color: #262626;
 }
