@@ -1,23 +1,22 @@
 <form>
   <label for="search-input">Search: </label>
-  <input type="text" id="search-input" class="search-input" name="search-input"></form>
+  <input type="text" id="search-input" class="search-input" name="search-input">
 </form>
-<div id="search-results" class="search-results">
-</div>
+<div id="search-results" class="search-results"></div>
 <script type="text/javascript">
 var Swiftype = window.Swiftype || {};
+    Swiftype.attachElement = '#search-input';
+    Swiftype.autocompleteSearchFields = { "page": ["title"] };
+    Swiftype.inputElement = '#search-input';
     Swiftype.key = 'PTCnAnrfYm7pvRS51Wya';
     Swiftype.renderStyle = 'inline';
-	Swiftype.resultContainingElement = '#search-results';
-	Swiftype.inputElement = '#search-input';
-	Swiftype.attachElement = '#search-input';
-	Swiftype.autocompleteSearchFields = {
-	  "page": ["title"]
-	};
+    Swiftype.resultContainingElement = '#search-results';
 (function() {
-	var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-	script.src = "//s.swiftypecdn.com/embed.js";
-	var entry = document.getElementsByTagName('script')[0];
-	entry.parentNode.insertBefore(script, entry);
+var script = document.createElement('script');
+    script.async = true;
+    script.type = 'text/javascript';
+    script.src = "//s.swiftypecdn.com/embed.js";
+var entry = document.getElementsByTagName('script')[0];
+    entry.parentNode.insertBefore(script, entry);
 }());
 </script>

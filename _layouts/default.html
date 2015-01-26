@@ -1,94 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
-<head>
-	<meta charset="utf-8">
-	<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.name }}</title>
-	<meta property="og:title" content="{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.name }}" />
-	<meta itemprop="name" content="{{ site.name }}">
-	<meta property="og:site_name" content="{{ site.name }}" />
-	<meta property="og:type" content="website" />
-
-	<meta name="description" content="{{ site.description }}">
-	<meta itemprop="description" content="{{ site.description }}">
-	<meta property="og:description" content="{{ site.description }}" />
-
-	<meta itemprop="image" content="{{ /img/logo.svg }}">
-	<meta property="og:image" content="/img/logo.svg" />
-
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@stormbit">
-	<meta name="twitter:title" content="{{ site.name }}">
-	<meta name="twitter:description" content="{{ site.description }}">
-
-	{% if page.author %}
-		{% assign author = site.people[page.author] %}
-		<meta name="author" content="{{ author.name }}">
-		{% if author.gplus %}
-			<link rel="author" href="https://plus.google.com/{{ author.gplus }}/posts"/>
-		{% endif %}
-		{% if author.twitter %}
-			<meta name="twitter:creator" content="{{ author.twitter }}">
-		{% endif %}
-	{% endif %}
-
-	<link rel="publisher" href="https://plus.google.com/+StormbitNet"/>
-	<meta name="keywords" content="{{  site.keywords  }}">
-
-	<link rel="stylesheet" type="text/css" href="{{ site.base }}css/style.css">
-	<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.base }}sitemap.xml">
-    <link rel="icon" type="image/png" href="{{ site.base }}img/favicon.png">
-    <link rel="apple-touch-icon" type="image/png" href="{{ site.base }}img/apple_touch_icon.png">
-	{% if site.env == 'development' %}
-		<link rel="stylesheet" type="text/css" href="{{ site.base }}css/dev-grid.css">
-		<script id="dev_grid-toggle" src="{{ site.base }}css/dev-grid.js"></script>
-	{% endif %}
-</head>
-<body>
-	<div id="topbar" class="navbar">
-		<div class="container">
-			<a href="{{site.base}}"><img src="{{ site.base }}img/logo.svg" height=50 alt="{{ site.name }}"></a>
-		<nav><ul>
-			<li><a href="//webchat.{{ site.tld }}/">Chat</a></li>
-			<li><a href="//discuss.{{ site.tld }}/">Forum</a></li>
-			<li><a href="{{ site.base }}help/">Help</a></li>
-			<li><a href="{{ site.base }}help/about.html">About</a></li>
-		</ul></nav>
-		</div>
-	</div>
-	<div id="page" class="container">
-		{{ content }}
-	</div>
-	<div id="footer" class="footer">
-		<div class="container">
-			<nav><ul>
-				<li><h1>About</h1><ul>
-					<li><a href="{{ site.base }}help/people.html">People</a></li>
-					<li><a href="{{ site.base }}help/policies.html">Policies</a></li>
-					<li><a href="{{ site.base }}help/">Help</a></li>
-					<!-- <li><a href="//status.{{ site.tld }}/">Status</a></li> -->
-				</ul></li>
-				<li><h1>IRC</h1><ul>
-					<li><a href="//webchat.{{ site.tld }}/">Web Chat</a></li>
-					<li><a href="{{ site.base }}help/connect.html">Connection Info</a></li>
-					<li><a href="{{ site.base }}help/services.html">Services</a></li>
-				</ul></li>
-				<li><h1>Forums</h1><ul>
-					<li>{% include forumlink.html category="gaming" title="Video Games" %}</li>
-					<li>{% include forumlink.html category="tech" title="Computers and Technology" %}</li>
-					<li>{% include forumlink.html category="general" title="General Discussion" %}</li>
-				</ul></li>
-			</ul></nav>
-			<div class="copyright">&copy; {{ site.time | date: "%Y" }} {{ site.name }}</div>
-			<div class="source"><a href="{{ site.github.repository_url }}">Source on GitHub</a> ({{ site.github.build_revision }})</div>
-		</div>
-	</div>
-
-	<!-- Made with love by Nuck -->
-	<!-- I'll accept payment in lucies. -->
-
-	<!-- Your wish is my command.
-			- Alex. -->
-</body>
-</html>
+<!doctype html>
+<html lang="en">
+	<head>
+		{% include header.html %}
+	</head>
+	<body>
+		{% include navbar.html %}
+		<div id="page" class="container">
+			{{ content }}
+ 		</div>
+		{% include footer.html %}
+	</body>
+ </html>

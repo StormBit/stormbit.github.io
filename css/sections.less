@@ -1,47 +1,35 @@
-/***********************************************/
-/************** FRONT PAGE STYLES **************/
-/***********************************************/
+// Settings
 @import url("settings.less");
 
-/**
- * LEAD SECTION
- */
 section.lead {
 	background-color: hsl(0, 0%, 10%);
 	color: white;
-	font-size: 17px;
+	font-size: (@font-size + 2);
 	margin-bottom: @line-height;
 	overflow: hidden;
 	padding: @line-height;
-
-	h1, p {
+	p {
 		padding: 0 0 0 @line-height;
 	}
 	h1 {
-		.columns(6);
-
 		float: left;
+		padding: 0; /* maybe (@line-height / 4) ??? */
+		width: 60%;
 	}
 	h2 {
-		.columns(6);
-
-		clear: none;
 		color: hsl(0, 0%, 70%);
 		float: right;
+		overflow: hidden;
 		text-align: right;
-	}
-	p {
-		.columns(12);
+		width: 40%;
 	}
 	.chat-now {
-		.columns(2);
-
 		background-color: hsl(0, 0%, 70%);
-		border-radius: 4px;
 		border: none;
+		border-radius: 4px;
 		color: hsl(0, 0%, 0%);
 		float: right;
-		font-family: 'M+ 1p';
+		font-family: @font-family;
 		font-weight: 400;
 		height: (@line-height * 3);
 		margin-left: @line-height;
@@ -53,44 +41,30 @@ section.lead {
 	}
 	.chat-now:hover, .chat-now:active {
 		background-color: hsl(0, 0%, 85%);
-		// Zeroes the border added on a:active, a:hover
 		border: none;
 	}
 	.chat-now:after {
-		content: "\203a";
 		font-size: 20px;
 		margin-left: 3px;
 	}
 	.chat-eventually {
-		.columns(2);
-
 		border: none;
 		clear: right;
 		color: hsl(0, 0%, 70%);
 		float: right;
 		font-size: 0.8em;
-		margin-bottom: @line-height;
 		margin-left: @line-height;
 		min-width: 125px;
 		text-align: center;
 		transition: color .25s;
 	}
 	.chat-eventually:hover, .chat-eventually:active {
-		// Zeroes the border added on a:active, a:hover
 		border: none;
 		color: hsl(0, 0%, 90%);
 	}
 }
-section.lead.home h1 {
-	.columns(12);
-}
 
-/**
- * NEWS SECTION
- */
 section.news {
-	.columns(12);
-
 	ul {
 		list-style: none;
 	}
@@ -109,21 +83,69 @@ section.news {
 	}
 }
 
-/**
- * FORUMS BOX
- */
 section.forums {
-	.columns(6);
-
 	background-color: hsl(0, 0%, 80%);
-	border-radius: 5px 5px 5px 5px;
+	border-radius: 5px;
 	float: right;
-	margin-bottom: @line-height;
-	margin-left: @grid-margins;
-	margin-top: @line-height;
+	margin: @line-height;
 	padding: @line-height;
 
 	iframe {
 		display: block;
 	}
+}
+
+section.person {
+	background-color: hsl(0, 0%, 80%);
+	border-radius: 5px;
+	margin: @line-height;
+	max-width: 250px;
+	padding: @line-height;
+}
+
+section.paginator {
+	background-color: #1a1a1a;
+	border-bottom: 1px solid #292929;
+	color: #fff;
+	height: 80px;
+	overflow: hidden;
+	padding: 0 @line-height;
+	text-align: center;
+	.page-newer, .page-older {
+		font-family: 'Font Awesome', FontAwesome, none;
+		font-size: (2 * @font-size);
+		line-height: (2 * @line-height);
+		color:#999;
+		margin: (@line-height / 2);
+		padding: (@line-height / 2);
+		vertical-align: middle;
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		transition:color .2s;
+	}
+	.page-newer { float: left; }
+	.page-older { float: right; }
+	.page-newer:hover {
+		color: #eee;
+		border: 0;
+	}
+	.page-older.disabled, .page-newer.disabled,
+	.page-older .disabled:hover, .page-newer .disabled:hover {
+		color:#222;
+		cursor:default;
+	}
+	h1 {
+		display: inline-block;
+	}
+}
+
+section a {
+	color: #191919;
+	display: inline-block;
+	transition: all .25s;
+}
+
+section a:hover {
+	color: #262626;
 }
