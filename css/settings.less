@@ -2,33 +2,5 @@
 @line-height: 20px;
 @font-size: 15px;
 @background: url("@{base}/img/bg.png");
-
-@grid-columns: 12;
-@grid-margins: 1%;
-
-.text () {
-	color: hsl(0, 0%, 20%);
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: @font-size;
-	font-weight: 300;
-	line-height: @line-height;
-}
-.head (0) {
-	font-family: 'M+ 1p', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: 300;
-}
-.head (@level) {
-	@size: round((30px - 3px * @level), 2);
-
-	font-size: @size;
-	line-height: (ceil(@size / @line-height) * @line-height);
-}
-.columns-container () {
-	max-width: 1024px;
-	width: 100%;
-}
-.columns (@cols: 1, @margins: @grid-margins) {
-	margin-left: (@margins / 2);
-	margin-right: (@margins / 2);
-	width: round(((@cols / @grid-columns) * 100% - @margins), 2);
-}
+@font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@max-width: 1024px;

@@ -1,145 +1,18 @@
-name: StormBit IRC Network
-description: "StormBit is an IRC network dedicated to anything you can think of from open source projects, to video games, to anime culture, we have a little of every community, so you can feel right at home. We also strongly believe in free speech and take a very hands-off approach to moderation, so if you can't find a channel that suits you, come on and make one!"
+baseurl: /
+description: >
+    StormBit is an IRC network dedicated to anything you can think
+    of from open source projects, to video games, to anime culture,
+    we have a little of every community, so you can feel right at home.
+    We also strongly believe in free speech and take a very hands-off
+    approach to moderation, so if you can't find a channel that suits you,
+    come on and make one!
+email: abuse@stormbit.net
+encoding: utf-8
+github: https://github.com/stormbit/stormbit.github.io
 keywords: IRC, stormbit, anime, gaming, chat
-
-paginate: 3,
+markdown: kramdown
+paginate: 4,
 paginate_path: /page:num
-
-url: http://stormbit.net/
-base: http://stormbit.net/
-tld: stormbit.net
-
-permalink: /:year/:month/:day/:title.html
-
-encoding: UTF-8
-
-markdown: redcarpet
-redcarpet:
- extensions: [
-  "no_intra_emphasis",
-  "fenced_code_blocks",
-  "tables",
-  "strikethrough"
- ]
-highlighter: null
-
-exclude:
-- 'vendor' # for vendored gems
-- 'Gemfile'
-- 'Gemfile.lock'
-- 'Rakefile'
-- 'Gruntfile.js'
-- 'package.json'
-
-# if you change the indents here, also fix it in the Rakefile!
-people:
-# removed amethyst temporarily.
-#  amethyst:
-#    name: Amethyst
-#    email:
-#    nick: amethyst
-#    website:
-#    twitter:
-#    gravatar:
-#    location:
-#    role:
-  antoligy:
-    name: Alex Wilson
-    email: alex.w@stormbit.net
-    nick: nekoflan
-    website: http://antoligy.com/
-    twitter: antoligy
-    gplus: +AlexAntoligyWilson
-    gravatar: a38b4c49423da71c55cec5b9482a682f
-    location: West Midlands, England
-    role: Network Administrator
-    title: Network Owner
-  angelXwind:
-    name: Karen Tsai
-    nick: angelXwind
-    website: http://angelxwind.net/
-    twitter: angelXwind
-    gplus:
-    gravatar: e7ec1508da6f89b3b971aa93d194b0b1
-    location: New York, USA
-    role: Server Administrator
-  benbop:
-    name: Ben Hale
-    email: benbop@antoligy.com
-    nick: benbop
-    website:
-    twitter: benbop1992
-    gplus:
-    gravatar: 5b1856bc156e2e3ee51f74fb126ca846
-    location: Walsall, England
-    role: Help Operator
-  clarjon1:
-    name: Jonathan Clark
-    email: clarjon1@xfilescabinet.com
-    nick: clarjon1
-    website: https://xfilescabinet.com/
-    twitter:
-    gplus:
-    gravatar: 8c9d9726112273515de7113661afcc48
-    location: Ontario, Canada
-    role: Server Administrator
-  dj_arghlex:
-    name: Alex Mitchell
-    email: arghargh200@gmail.com
-    nick: dj_arghlex
-    website: http://arghlex.net/
-    twitter: arghargh200
-    gplus:
-    gravatar: fbc7ed8937b3248df7bdf6609238e417
-    location: Washington, USA
-    role: Network Operator
-  mikotohe2:
-    name: Lucy Firman
-    email: lucy.f@stormbit.net
-    nick: lucy
-    website:
-    twitter: mikotohe2
-    gplus:
-    gravatar: 32704faf83d4752c5cec2e918557409b
-    location: Essex, England
-    role: Network Administrator
-    title: Deputy Network Owner
-  reimuhakurei:
-    name: Alex Ingram
-    email: alex.i@stormbit.net
-    nick: reimuhakurei
-    website: http://reimuhakurei.net/
-    twitter: kudo147
-    gplus:
-    gravatar: ae9927c9117d5a9002fd55d941ee62bc
-    location: Indiana, USA
-    role: Server Administrator
-  rikai:
-    name: Rikairchy Albright
-    email: admin@rikairchy.net
-    nick: rikai
-    website: http://rikairchy.net/
-    twitter: rikairchy
-    gplus:
-    gravatar: cbc7547471385c04d28209027daa33a9
-    location: North Carolina, USA
-    role: Network Administrator
-  tiffany:
-    name: Tiffany Bennett
-    email: tiffany@stormbit.net
-    nick: tiffany
-    website: http://lymiahugs.com/~tiffany
-    twitter: tiffany_public
-    gplus:
-    gravatar: 8ca0ebe649d1a7cb609b53d540b05f52
-    location: Florida, USA
-    role: Network Operator
-  ch1zuru:
-    name: Alice Luna Daniels
-    nick: ch1zuru
-    website: http://ch1zuru.us/
-    twitter: ch1zuruuuu
-    gplus: +AkiJenkinsonGS
-    gravatar: dd2e672f576970cdb2868da9fb9952b4
-    location: Auckland, New Zealand
-    role: Server Administrator
+title: StormBit IRC Network
+twitter: stormbit
+url: stormbit.net

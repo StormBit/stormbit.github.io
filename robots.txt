@@ -3,7 +3,6 @@ layout: none
 ---
 
 User-Agent: *
-{% for page in site.pages %}{% if page.url contains '404' %}
-Disallow: /404.html{% endif %}{% endfor%}
+Disallow: /404.html
 
-Sitemap: http://stormbit.net/sitemap.xml
+Sitemap: http://{{ site.url }}/sitemap.xml
