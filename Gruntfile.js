@@ -19,7 +19,8 @@ module.exports = function (grunt) {
 					sourceMap: true
 				},
 				files: {
-					'css/style.css': 'css/style.less'
+					'css/style.css': 'css/style.less',
+					'css/dev-grid.css': 'css/dev-grid.less'
 				}
 			},
 			production: {

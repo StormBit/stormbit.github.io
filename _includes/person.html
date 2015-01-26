@@ -1,7 +1,7 @@
-{% assign _person = include.person %}
+{% assign _person = site.people[include.person] %}
 
 {% if include.size == "big" %}
-<section class="person" id="person-{{ _person.nick }}">
+<section class="person person-{{ include.person }}" id="person-{{ include.person }}">
 	<header>
 		<img src="//www.gravatar.com/avatar/{{ _person.gravatar }}?s=100" alt="avatar">
 		<h2>{{ _person.name }}</h2>
@@ -27,8 +27,8 @@
 	</dl>
 </section>
 {% elsif include.size == "small" %}
-<a rel="author" href="{{ site.baseurl }}help/people.html#person-{{ _person.nick }}">
-	<address class="person person-{{ _person.nick }}">
+<a rel="author" href="help/people.html#person-{{ include.person }}">
+	<address class="person person-{{ include.person }}">
 		{{ _person.name }}
 	</address>
 </a>

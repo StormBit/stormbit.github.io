@@ -1,5 +1,4 @@
-css/*.css
-Gemfile.lock
-node_modules
 _site
-*~
+node_modules
+_whoami
+css/*.css
