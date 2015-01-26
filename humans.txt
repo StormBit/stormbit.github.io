@@ -1,0 +1,24 @@
+---
+layout: none
+---
+/* TEAM */
+{% for person in site.data.people %}
+{% assign _person = person[1] %}
+{% if person[1].title %}{{ person[1].title }}{% elsif person[1].role %}{{ person[1].role }}{% else %}Friend{% endif %}: {{ person[1].name }}{% if person[1].email %}
+Contact: {{ person[1].email | replace: '@', ' mail ' }}{% endif %}{% if person[1].website %}
+Site: {{ person[1].website }}{% endif %}{% if person[1].twitter %}
+Network Username: {{ person[0] }}
+Twitter: @{{ person[1].twitter }}{% endif %}{% if person[1].location %}
+Location: {{ person[1].location }}{% endif %}
+{% endfor %}
+
+/* GITHUB CONTRIBUTORS */
+{% for person in site.github.contributors %}GitHub Username: {{ person.login }}
+GitHub Profile: {{ person.html_url }}
+
+{% endfor %}
+
+/* SITE */
+Last update: {{ site.time|date: "%Y/%m/%d" }}
+Software: {% for software in site.github.versions %}{{ software[0] }} v{{software[1]}}{% if forloop.last == false %}, {% endif %}{% endfor %}
+Repository: {{ site.github.repository_url }}

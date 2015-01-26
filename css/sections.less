@@ -1,3 +1,4 @@
+// Settings
 @import url("settings.less");
 
 section.lead {
@@ -7,20 +8,20 @@ section.lead {
 	margin-bottom: @line-height;
 	overflow: hidden;
 	padding: @line-height;
-
-	h1, p {
+	p {
 		padding: 0 0 0 @line-height;
 	}
 	h1 {
 		float: left;
-		width: 1024px;
+		padding: 0; /* maybe (@line-height / 4) ??? */
+		width: 60%;
 	}
 	h2 {
 		color: hsl(0, 0%, 70%);
 		float: right;
-		text-align: right;
 		overflow: hidden;
-		margin-top: -2em;
+		text-align: right;
+		width: 40%;
 	}
 	.chat-now {
 		background-color: hsl(0, 0%, 70%);
@@ -47,7 +48,6 @@ section.lead {
 		border: none;
 	}
 	.chat-now:after {
-		content: "\203a";
 		font-size: 20px;
 		margin-left: 3px;
 	}
@@ -63,7 +63,6 @@ section.lead {
 		transition: color .25s;
 	}
 	.chat-eventually:hover, .chat-eventually:active {
-		// Zeroes the border added on a:active, a:hover
 		border: none;
 		color: hsl(0, 0%, 90%);
 	}
@@ -104,23 +103,20 @@ section.person {
 	background-color: hsl(0, 0%, 80%);
 	border-radius: 5px;
 	margin: @line-height;
-	min-width: 50%;
+	max-width: 250px;
 	padding: @line-height;
 }
-
-// address, .person {
-// }
 
 section.paginator {
 	background-color: #1a1a1a;
 	border-bottom: 1px solid #292929;
 	color: #fff;
-	font-family: 'Font Awesome', FontAwesome, none;
 	height: 80px;
 	overflow: hidden;
 	padding: 0 @line-height;
 	text-align: center;
 	.page-newer, .page-older {
+		font-family: 'Font Awesome', FontAwesome, none;
 		font-size: (2 * @font-size);
 		line-height: (2 * @line-height);
 		color:#999;
@@ -146,4 +142,14 @@ section.paginator {
 	h1 {
 		display: inline-block;
 	}
+}
+
+section a {
+	color: #191919;
+	display: inline-block;
+	transition: all .25s;
+}
+
+section a:hover {
+	color: #262626;
 }

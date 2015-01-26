@@ -1,4 +1,21 @@
+// Settings
 @import url("settings.less");
+
+html, body {
+	background: @background;
+	color: hsl(0, 0%, 20%);
+	font-family: @font-family;
+	font-size: @font-size;
+	font-weight: 300;
+	height: 100%;
+	line-height: @line-height;
+	width: 100%;
+}
+
+.navbar-inverse {
+	background-image: none;
+	background-color: #191919;
+}
 
 .navbar {
 	background-color: #191919;
@@ -35,30 +52,25 @@
 	}
 }
 
-body {
-	.text();
-}
-
 .container {
 	width: 100%;
+	max-width: @max-width;
 }
 
 #page {
 	background-color: hsl(0, 0%, 95%);
 	background-position: 0 10px;
 	box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
-	min-height: 100%;
 	margin: 3em auto 0 auto;
+	min-height: 100%;
 	padding: 0;
 	width: 100%;
 	max-width: @max-width;
 }
 
 #page > .inner {
-	margin-left: @line-height;
-	margin-right: @line-height;
-	padding-left: @line-height;
-	padding-right: @line-height;
+	margin: 0 (@line-height / 2);
+	padding: 0 (@line-height / 2) (@line-height / 2) (@line-height / 2);
 }
 
 footer {
@@ -67,7 +79,31 @@ footer {
 	font-size: round((@font-size * 0.9), 2);
 	margin: 0 auto;
 	padding: @line-height;
+	width: 100%;
+	.container {
+		width: 100%;
+		max-width: @max-width;
+	}
+	h4 { text-align: center; }
+	li { text-align: left; }
+	ul { width: 50%; margin: auto; }
+}
+
+.warning {
+	background: #FFB400;
+	border-radius: 4px;
+	color: black;
+	display: block;
+	font-family: @font-family;
+	font-size: 1.1em;
+	margin: @line-height 0;
+	padding: @line-height;
+}
+
+.image {
 	text-align: center;
+	width: 33%;
+	margin: 0 auto;
 
 	.row {
 		width: 100%;
@@ -78,4 +114,9 @@ footer {
 	ul {
 		list-style: none inside none;
 	}
+
+}
+
+.text section.person {
+	float: right;
 }

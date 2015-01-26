@@ -1,0 +1,8 @@
+---
+layout: none
+---
+
+User-Agent: *
+Disallow: /404.html
+
+Sitemap: http://{{ site.url }}/sitemap.xml

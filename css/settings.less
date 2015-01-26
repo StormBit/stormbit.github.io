@@ -4,22 +4,3 @@
 @background: url("@{base}/img/bg.png");
 @font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @max-width: 1024px;
-
-.text () {
-	color: hsl(0, 0%, 20%);
-	font-family: @font-family;
-	font-size: @font-size;
-	font-weight: 300;
-	line-height: @line-height;
-}
-
-.head (0) {
-	font-family: @font-family;
-	font-weight: 300;
-}
-
-.head (@level) {
-	@size: round((30px - 3px * @level), 2);
-	font-size: @size;
-	line-height: (ceil(@size / @line-height) * @line-height);
-}

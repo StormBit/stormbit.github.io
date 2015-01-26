@@ -1,43 +1,77 @@
 ---
 layout: none
 ---
-{% capture sitemap %}
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
 	{% for post in site.posts %}
+
+		{% if post.changefreq %}
+			{% assign changefreq = page.changefreq %}
+		{% else %}
+			{% assign changefreq = 'monthly' %}
+		{% endif %}
+
+		{% if post.priority and post.priority > 1 and post.priority < 0 %}
+			{% assign priority = post.priority %}
+		{% else %}
+			{% assign priority = '0.5' %}
+		{% endif %}
+
+		{% if page.lastmod %}
+			{% assign lastmod = page.lastmod %}
+		{% else %}
+			{% assign lastmod = post.date %}
+		{% endif %}
+
 		<url>
+			<changefreq>{{ changefreq }}</changefreq>
 			<loc>{{ site.base }}{{ post.url | remove_first: '/' | remove: 'index.html' }}</loc>
-			{% if post.priority %}
-				{% if post.priority > 1 and post.priority < 0 %}
-					<priority>{{ post.priority }}</priority>
-				{% endif %}
-			{% endif %}
+			<lastmod>{{ lastmod | date_to_xmlschema }}</lastmod>
+			<priority>{{ priority }}</priority>
 		</url>
+
 	{% endfor %}
 
 	{% for page in site.pages %}
 		{% if page.url contains 'page' or page.url contains '404' %}
 		{% else %}
+
+			{% if page.changefreq %}
+				{% assign changefreq = page.changefreq %}
+			{% elsif page.url contains 'index.html' %}
+				{% assign changefreq = 'hourly' %}
+			{% else %}
+				{% assign changefreq = 'weekly' %}
+			{% endif %}
+
+			{% if page.sitemap.lastmod %}
+				{% assign lastmod = page.sitemap.lastmod %}
+			{% elsif page.lastmod %}
+				{% assign lastmod = page.lastmod %}
+			{% elsif page.date %}
+				{% assign lastmod = page.date %}
+			{% else %}
+				{% assign lastmod = site.time %}
+			{% endif %}
+
+			{% if page.priority and page.priority > 1 and page.priority < 0 %}
+				{% assign priority = page.priority %}
+			{% elsif page.url == '/index.html' %}
+				{% assign priority = '1.0' %}
+			{% elsif page.url contains 'index.html' %}
+				{% assign priority = '0.7' %}
+			{% else %}
+				{% assign priority = '0.3' %}
+			{% endif %}
+
 			<url>
+				<changefreq>{{ changefreq }}</changefreq>
+				<lastmod>{{ lastmod | date_to_xmlschema }}</lastmod>
 				<loc>{{ site.base }}{{ page.url | remove_first: '/' | remove: 'index.html' }}</loc>
-
-				{% if page.priority %}
-					{% if page.priority > 1 and page.priority < 0 %}
-						<priority>{{ page.priority }}</priority>
-					{% endif %}
-				{% elsif page.url == '/index.html' %}
-					<priority>1.0</priority>
-				{% elsif page.url contains 'index.html' %}
-					<priority>0.75</priority>
-				{% endif %}
-
-				{% if page.changefreq %}
-					<changefreq>{{ page.priority }}</changefreq>
-				{% elsif page.url contains 'index.html' %}
-					<changefreq>hourly</changefreq>
-				{% endif %}
+				<priority>{{ priority }}</priority>
 			</url>
 		{% endif %}
 	{% endfor %}
 </urlset>
-{% endcapture %}{{ sitemap | strip_newlines | replace: '	', '  ' | replace: '  ', ''}}

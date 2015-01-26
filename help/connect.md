@@ -1,36 +1,46 @@
 ---
 layout: page
-title: Connection Info
+title: Join Us
 subtitle: Bring Your Own Client
 ---
 
-## Recommended Settings
-Server: **[irc.stormbit.net](irc://irc.stormbit.net)**  
-Port: **6697**  
+# Recommended Settings
+
+Server: **[irc.stormbit.net](irc://irc.stormbit.net)**
+
+Port: **6697**
+
 SSL: **enabled**
 
-<!-- TODO: add certificate links -->
+# Servers
 
-## Servers
-Main rotation: **[irc.stormbit.net](irc://irc.stormbit.net)**  
+Main rotation: **[irc.stormbit.net](irc://irc.stormbit.net)**
+
 Pointers: **[irc.pomf.se](irc://irc.pomf.se)**
 
-
 <span class="warning">
-  The following list is not guaranteed to be up-to-date, so we recommend using the
-  main rotation instead.
+  The following list is not guaranteed to be up-to-date, so we recommend
+  using the main rotation instead.
 </span>
 
-Name                    | Address                | Location                           |
-------------------------|:----------------------:|:----------------------------------:|
-aXwNET                  | irc.angelxwind.net     | Las Vegas, Nevada, United States   |
-ReimuNET                | irc.reimuhakurei.net   | Atlanta, Georgia, United States    |
-xfcab                   | irc.xfcab.com          | Seattle, Washington, United States |
-FALLOUT                 | fallout.stormbit.net   | Nürnberg, Germany                  |
-Ridley                  | ridley.stormbit.net    | Kent, England, United Kingdom      |
+<table class="table table-striped table-bordered"><tbody>
+  <tr>
+    <td><strong>Name</strong></td>
+    <td><strong>Address</strong></td>
+    <td><strong>Location</strong></td>
+  </tr>
+{% for server in site.data.servers %}
+  <tr>
+    <td>{{ server.name }}</td>
+    <td>{{ server.address }}</td>
+    <td>{{ server.location}}</td>
+  </tr>
+{% endfor %}
+</tbody></table>
 
 All StormBit servers listen on ports 6667 and 6697 (SSL).
 
-## Gibe more servers ##
-The network is seeking more servers in mainland europe and the south pacific: if
-  you think you might be able to help with this, contact an operator.
+# Donate A Server
+
+The network is seeking more servers in Europe and the South Pacific:
+if you think you might be able to help with this, contact an operator.

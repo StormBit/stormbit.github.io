@@ -3,7 +3,6 @@ layout: post
 title: "Happy Birthday Alex!"
 date: "2014-05-06 22:00"
 author: mikotohe2
-published: true
 ---
 
 ####Happy Birthday, Alex!####
