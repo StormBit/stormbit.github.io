@@ -15,7 +15,18 @@ These are sort of a general idea on what our rules are.
 ##Okay, how do I connect?
 Well, there's a few different servers. At the moment we have:
 
-<table>
+<style>
+.connecturltable {
+	padding:5px;
+}
+.connecturltable thead {
+	text-decoration:bold;
+}
+.connecturltable td {
+	padding:2px;
+}
+</style>
+<table class="connecturltable">
 	<thead>
 		<td>Game</td>
 		<td>Connection Address</td>
