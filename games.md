@@ -15,7 +15,6 @@ These are sort of a general idea on what our rules are.
 ##Okay, how do I connect?
 Well, there's a few different servers. At the moment we have:
 
-
 <table>
 	<thead>
 		<td>Game</td>
@@ -23,13 +22,13 @@ Well, there's a few different servers. At the moment we have:
 	</thead>
 	<tr>
 		<td>Space Engineers Freeplay Factions/PvP</td>
-		<td>[play.galeforce.me:25252](<steam://connect/play.galeforce.me:25252>)</td>
+		<td><a href="steam://connect/play.galeforce.me:25252">play.galeforce.me:25252</a></td>
 	</tr><tr>
 		<td>Garry's Mod Prop Hunt</td>
-		<td>[play.galeforce.me:15151](<steam://connect/play.galeforce.me:15151>)</td>
+		<td><a href="steam://connect/play.galeforce.me:15151">play.galeforce.me:15151</a></td>
 	</tr><tr>
 		<td>Team Fortress 2 Capture-the-flag</td>
-		<td>[play.galeforce.me:35353](<steam://connect/play.galeforce.me:35353>)</td>
+		<td><a href="steam://connect/play.galeforce.me:35353">play.galeforce.me:35353</a></td>
 	</tr><tr>
 		<td>Xonotic Deathmatch Server</td>
 		<td>play.galeforce.me:28000</td>
