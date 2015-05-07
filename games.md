@@ -21,6 +21,7 @@ table {
 }
 thead {
 	font-weight:bold;
+	border-bottom: 2px #a0a0a0;
 }
 td,th {
 	padding:4px;
