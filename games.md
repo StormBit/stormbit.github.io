@@ -21,16 +21,16 @@ Well, there's a few different servers. At the moment we have:
 		<td>Connection Address</td>
 	</thead>
 	<tr>
-		<td>Space Engineers Freeplay Factions/PvP</td>
+		<td>Space Engineers Freeplay Factions/PvP&nbsp&nbsp</td>
 		<td><a href="steam://connect/play.galeforce.me:25252">play.galeforce.me:25252</a></td>
 	</tr><tr>
-		<td>Garry's Mod Prop Hunt</td>
+		<td>Garry's Mod Prop Hunt&nbsp&nbsp</td>
 		<td><a href="steam://connect/play.galeforce.me:15151">play.galeforce.me:15151</a></td>
 	</tr><tr>
-		<td>Team Fortress 2 Capture-the-flag</td>
+		<td>Team Fortress 2 Capture-the-flag&nbsp&nbsp</td>
 		<td><a href="steam://connect/play.galeforce.me:35353">play.galeforce.me:35353</a></td>
 	</tr><tr>
-		<td>Xonotic Deathmatch Server</td>
+		<td>Xonotic Deathmatch Server&nbsp&nbsp</td>
 		<td>play.galeforce.me:28000</td>
 	</tr>
 </table>
