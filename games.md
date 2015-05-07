@@ -16,32 +16,32 @@ These are sort of a general idea on what our rules are.
 Well, there's a few different servers. At the moment we have:
 
 <style>
-.connecturltable {
-	padding:5px;
+table {
+	margin:10px;
 }
-.connecturltable thead {
-	text-decoration:bold;
+thead {
+	font-weight:bold;
 }
-.connecturltable td {
-	padding:2px;
+td,th {
+	padding:4px;
 }
 </style>
-<table class="connecturltable">
+<table>
 	<thead>
-		<td>Game</td>
-		<td>Connection Address</td>
+		<th>Game</th>
+		<th>Connection Address</th>
 	</thead>
 	<tr>
-		<td>Space Engineers Freeplay Factions/PvP&nbsp&nbsp</td>
+		<td>Space Engineers Freeplay Factions/PvP</td>
 		<td><a href="steam://connect/play.galeforce.me:25252">play.galeforce.me:25252</a></td>
 	</tr><tr>
-		<td>Garry's Mod Prop Hunt&nbsp&nbsp</td>
+		<td>Garry's Mod Prop Hunt</td>
 		<td><a href="steam://connect/play.galeforce.me:15151">play.galeforce.me:15151</a></td>
 	</tr><tr>
-		<td>Team Fortress 2 Capture-the-flag&nbsp&nbsp</td>
+		<td>Team Fortress 2 Capture-the-flag</td>
 		<td><a href="steam://connect/play.galeforce.me:35353">play.galeforce.me:35353</a></td>
 	</tr><tr>
-		<td>Xonotic Deathmatch Server&nbsp&nbsp</td>
+		<td>Xonotic Deathmatch Server</td>
 		<td>play.galeforce.me:28000</td>
 	</tr>
 </table>
