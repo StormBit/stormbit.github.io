@@ -15,16 +15,28 @@ These are sort of a general idea on what our rules are.
 ##Okay, how do I connect?
 Well, there's a few different servers. At the moment we have:
 
----
-Game: Space Engineers Freeplay Factions/PvP
-Connection Address: [play.galeforce.me:25252](<steam://connect/sbg.arghlex.net:25252>)
-Game: Garry's Mod Prop Hunt
-Connection Adress: [play.galeforce.me:15151](<steam://connect/sbg.arghlex.net:15151>)
-Game: Team Fortress 2 Capture-the-flag
-Connection Adress: [play.galeforce.me:35353](<steam://connect/sbg.arghlex.net:35353>)
-Game: Xonotic Deathmatch Server
-Connection Adress: play.galeforce.me:28000
----
+
+<table>
+	<thead>
+		<td>Game</td>
+		<td>Connection Address</td>
+	</thead>
+	<tr>
+		<td>Space Engineers Freeplay Factions/PvP</td>
+		<td>[play.galeforce.me:25252](<steam://connect/play.galeforce.me:25252>)</td>
+	</tr><tr>
+		<td>Garry's Mod Prop Hunt</td>
+		<td>[play.galeforce.me:15151](<steam://connect/play.galeforce.me:15151>)</td>
+	</tr><tr>
+		<td>Team Fortress 2 Capture-the-flag</td>
+		<td>[play.galeforce.me:35353](<steam://connect/play.galeforce.me:35353>)</td>
+	</tr><tr>
+		<td>Xonotic Deathmatch Server</td>
+		<td>play.galeforce.me:28000</td>
+	</tr>
+</table>
+
+If you can't remember the port, or if it's not listed, just connect to play.galeforce.me on the default port for the game. Chances are you'll find what you're looking for.
 
 with plans to announce:
 
