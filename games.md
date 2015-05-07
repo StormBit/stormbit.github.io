@@ -2,8 +2,6 @@
 layout: page
 title: GaleForce Games
 ---
-#GaleForce Games
-
 ##What is it?
 Game servers! Aren't those great? We originally intended it to be sort of a community-only thing but soon realized that it was silly to only let our regulars on the network join, so we decided to open it up to the general public!
 
@@ -17,10 +15,12 @@ These are sort of a general idea on what our rules are.
 ##Okay, how do I connect?
 Well, there's a few different servers. At the moment we have:
 
-- [Space Engineers Freeplay Factions/PvP, sbg.arghlex.net:25252](<steam://connect/sbg.arghlex.net:25252>)
-- [Garry's Mod Prop Hunt, sbg.arghlex.net:15151](<steam://connect/sbg.arghlex.net:15151>)
-- [Team Fortress 2 Capture-the-flag, sbg.arghlex.net:35353](<steam://connect/sbg.arghlex.net:35353>)
-- Xonotic Deathmatch Server, sbg.arghlex.net:28000
+--
+[Space Engineers Freeplay Factions/PvP](<steam://connect/sbg.arghlex.net:15151>): [sbg.arghlex.net:25252](<steam://connect/sbg.arghlex.net:25252>)
+[Garry's Mod Prop Hunt](<steam://connect/sbg.arghlex.net:15151>):  [sbg.arghlex.net:15151](<steam://connect/sbg.arghlex.net:15151>)
+[Team Fortress 2 Capture-the-flag](<steam://connect/sbg.arghlex.net:15151>): [sbg.arghlex.net:35353](<steam://connect/sbg.arghlex.net:35353>)
+Xonotic Deathmatch Server: sbg.arghlex.net:28000
+--
 
 with plans to announce:
 
