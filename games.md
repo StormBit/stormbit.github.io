@@ -15,12 +15,16 @@ These are sort of a general idea on what our rules are.
 ##Okay, how do I connect?
 Well, there's a few different servers. At the moment we have:
 
---
-[Space Engineers Freeplay Factions/PvP](<steam://connect/sbg.arghlex.net:15151>): [sbg.arghlex.net:25252](<steam://connect/sbg.arghlex.net:25252>)
-[Garry's Mod Prop Hunt](<steam://connect/sbg.arghlex.net:15151>):  [sbg.arghlex.net:15151](<steam://connect/sbg.arghlex.net:15151>)
-[Team Fortress 2 Capture-the-flag](<steam://connect/sbg.arghlex.net:15151>): [sbg.arghlex.net:35353](<steam://connect/sbg.arghlex.net:35353>)
-Xonotic Deathmatch Server: sbg.arghlex.net:28000
---
+---
+Game: Space Engineers Freeplay Factions/PvP
+Connection Address: [play.galeforce.me:25252](<steam://connect/sbg.arghlex.net:25252>)
+Game: Garry's Mod Prop Hunt
+Connection Adress: [play.galeforce.me:15151](<steam://connect/sbg.arghlex.net:15151>)
+Game: Team Fortress 2 Capture-the-flag
+Connection Adress: [play.galeforce.me:35353](<steam://connect/sbg.arghlex.net:35353>)
+Game: Xonotic Deathmatch Server
+Connection Adress: play.galeforce.me:28000
+---
 
 with plans to announce:
 
