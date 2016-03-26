@@ -25,4 +25,5 @@ Of course these changes are fairly opinionated and come solely from the crucible
 
 Oh and before I forget, from all of us here at StormBit, may you have an incredible 2016!
 
-<iframe src="https://docs.google.com/forms/d/1Ca_x9AV8Sd2N-JvR-v-qk-joyfVVAhODEOjM3hxtYfQ/viewform?embedded=true" width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+[StormBit Survey 2015](https://docs.google.com/forms/d/1Ca_x9AV8Sd2N-JvR-v-qk-joyfVVAhODEOjM3hxtYfQ/viewform).
+<!--iframe src="https://docs.google.com/forms/d/1Ca_x9AV8Sd2N-JvR-v-qk-joyfVVAhODEOjM3hxtYfQ/viewform?embedded=true" width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0"></iframe-->
