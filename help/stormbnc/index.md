@@ -51,14 +51,11 @@ We put as much pride in keeping our BNC service running smoothly as we do in
 our IRC network.
 
 # Signing Up
-Either submit the form below, or ask in
-[#stormbnc on irc.stormbit.net](irc://irc.stormbit.net:6667/#stormbnc)
-to get a free ZNC account!
+Type !help in [#stormbnc on irc.stormbit.net](irc://irc.stormbit.net:6667/#stormbnc). [Webchat client available here.](http://iris.stormbit.net/?nick=BNCGuestA.....&channels=stormbnc&prompt=1)
 
-# Setting up
-Check out our [connection info page](connecting.html) for more info.
+# Setting Up
+Check out our [help page](http://bnc.stormbit.net#help) for more info.
 
-<iframe src="https://docs.google.com/forms/d/1yPuzIQj04rgRHST0JLg3aJ-m_nvCPY09Cqke1UvNtu8/viewform?embedded=true"
-  width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
-Loading registration form...
-</iframe>
+# Rules
+Check out our [rules page](http://bnc.stormbit.net#rules) for these.
+
