@@ -1,18 +1,10 @@
-- name: aXwNET
-  address: irc.angelxwind.net
-  location: Las Vegas, Nevada, United States
-
 - name: ReimuNET
   address: irc.reimuhakurei.net
   location: Atlanta, Georgia, United States
 
 - name: xfcab
-  address: irc.xfcab.com
+  address: xfcab.stormbit.net
   location: Seattle, Washington, United States
-
-- name: FALLOUT
-  address: fallout.stormbit.net
-  location: Nürnberg, Germany
 
 - name: Ridley
   address: ridley.stormbit.net
