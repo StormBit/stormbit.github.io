@@ -56,8 +56,8 @@ NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
   If they persist or attempt to evade this, you _must_ immediately contact the
   network staff.
 - Bots, file servers, and proxies (including Tor) are allowed, as long as you
-  comply with the rest of the rules. Bots _should_ set usermode +B on
-  themselves to avoid confusion.
+  comply with the rest of the rules.
+- Bots _should_ set usermode +B on themselves to avoid confusion.
 - Our stance on vhosts is rather liberal. Anything goes as long as it doesn't
   explicitly attack other users or their views or is grossly inappropriate.
   Domain names are even allowed, as long as you can prove you represent the
