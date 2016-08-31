@@ -74,6 +74,6 @@ NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
 
 Changes and alterations to this document may be considered binding two days
 (48 hours) after being published.  Alterations and suggestions _may_ be proposed
-at any time, subject to peer-review.
+by anybody at any time, subject to peer-review.
 
 #### [Changelog](https://github.com/StormBit/stormbit.github.io/commits/master/help/policies.md)
