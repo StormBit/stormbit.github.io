@@ -19,6 +19,7 @@ NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
 [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).</small>
 
 # As a StormBit user, you are expected to respect other users and network staff.
+
 ## The following attitudes and actions __shall not__ be tolerated
 
 - Threatening, stalking, or abusing other users or the network.
