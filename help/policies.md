@@ -40,6 +40,7 @@ NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
   don't harm the network, other networks or other users.
 - Staff _must not_ abuse their privileges to enforce network or channel rules in
   independent channels, unless in compliance with the exceptions outlined below.
+- Staff _must_ put out notice of any alterations to these rules.
 - Staff _shall_ actively interfere in the case of "stalkers" and other exceptional
   circumstances, regardless of whether you ignored them.
 - Staff _shall_ actively interfere with any and all entities masquerading as being
@@ -68,7 +69,11 @@ NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
 - If found to be in breach of the rules, and this breach is considered negligible
   or an accident, the network staff _may_ message you with a warning.  Failure to comply
   or repeat offenses _shall_ result in a ban.
-- IP masking is enabled by default. You can set usermode -x on yourself to
+- IP masking is enabled by default. You can set usermode `-x` on yourself to
   disable this.
+
+Changes and alterations to this document may be considered binding two days
+(48 hours) after being published.  Alterations and suggestions _may_ be proposed
+at any time, subject to peer-review.
 
 #### [Changelog](https://github.com/StormBit/stormbit.github.io/commits/master/help/policies.md)
