@@ -62,6 +62,5 @@ As a StormBit user, you are expected to respect other users and network staff.
 - If found to be in breach of the rules, and this breach is considered negligible
   or an accident, the network staff may message you with a warning.  Failure to comply
   or repeat offenses may result in a ban.
-  not be taken as lightly.  Don't re-offend!
 - IP masking is enabled by default. You can set usermode -x on yourself to
   disable this.
