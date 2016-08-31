@@ -4,10 +4,10 @@
 section.lead {
 	background-color: hsl(0, 0%, 10%);
 	color: white;
-	font-size: ($font-size + 2);
-	margin-bottom: $line-height;
+	font-size: 17px;
+	margin-bottom: 20px;
 	overflow: hidden;
-	padding: $line-height;
+	padding: 20px;
 	p {
 		padding: 0 0 0 $line-height;
 	}
@@ -30,9 +30,9 @@ section.lead {
 		color: hsl(0, 0%, 0%);
 		float: right;
 		font-family: $font-family;
-		margin-left: $line-height;
+		margin-left: 20px;
 		min-width: 125px;
-		padding: $line-height 0;
+		padding: 20px 0;
 		text-align: center;
 		text-transform: uppercase;
 		transition: background 25s;
@@ -57,7 +57,7 @@ section.lead {
 		color: hsl(0, 0%, 70%);
 		float: right;
 		font-size: 0.8em;
-		margin-left: $line-height;
+		margin-left: 20px;
 		min-width: 125px;
 		text-align: center;
 		transition: color 25s;
