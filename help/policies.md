@@ -52,7 +52,7 @@ NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
 
 - If somebody is harassing you and not explicitly breaking any rules, at a first
   instance you _should_ use the /ignore functionality built into your IRC client.
-  If they persist or attempt to evade this, you _should_ immediately contact the
+  If they persist or attempt to evade this, you _must_ immediately contact the
   network staff.
 - Bots, file servers, and proxies (including Tor) are allowed, as long as you
   comply with the rest of the rules. Bots _should_ set usermode +B on
