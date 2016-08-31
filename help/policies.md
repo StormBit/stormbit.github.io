@@ -13,10 +13,10 @@ If you have any issues or concerns, you may contact staff via
 [IRC](irc://irc.stormbit.net/stormbit "#StormBit on irc.stormbit.net"), or
 [email](mailto:abuse@stormbit.net "abuse@stormbit.net").
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
+<small>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
 NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
 "OPTIONAL" in this document are to be interpreted as described in
-[RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+[RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).</small>
 
 # As a StormBit user, you are expected to respect other users and network staff.
 ## The following attitudes and actions __shall not__ be tolerated
@@ -48,7 +48,7 @@ NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
 - Staff reserve the right to remove you for any reason without notice or
   warning.
 
-# Guidelines for you:
+## Guidelines for you
 
 - If somebody is harassing you and not explicitly breaking any rules, at a first
   instance you _should_ use the /ignore functionality built into your IRC client.
@@ -70,3 +70,5 @@ NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
   or repeat offenses _shall_ result in a ban.
 - IP masking is enabled by default. You can set usermode -x on yourself to
   disable this.
+
+#### [Changelog](https://github.com/StormBit/stormbit.github.io/commits/master/help/policies.md)
