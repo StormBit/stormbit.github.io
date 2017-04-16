@@ -23,49 +23,6 @@ section.lead {
 		text-align: right;
 		width: 40%;
 	}
-	.chat-now {
-		background-color: hsl(0, 0%, 70%);
-		border: none;
-		border-radius: 4px;
-		color: hsl(0, 0%, 0%);
-		float: right;
-		font-family: $font-family;
-		margin-left: 20px;
-		min-width: 125px;
-		padding: 20px 0;
-		text-align: center;
-		text-transform: uppercase;
-		transition: background 25s;
-		@media only screen and (max-width: 450px) {
-			margin: 10px 0px;
-			width: 100%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-	}
-	.chat-now:hover, .chat-now:active {
-		background-color: hsl(0, 0%, 85%);
-		border: none;
-	}
-	.chat-now:after {
-		font-size: 20px;
-		margin-left: 3px;
-	}
-	.chat-eventually {
-		border: none;
-		clear: right;
-		color: hsl(0, 0%, 70%);
-		float: right;
-		font-size: 0.8em;
-		margin-left: 20px;
-		min-width: 125px;
-		text-align: center;
-		transition: color 25s;
-	}
-	.chat-eventually:hover, .chat-eventually:active {
-		border: none;
-		color: hsl(0, 0%, 90%);
-	}
 }
 
 section.news {
@@ -77,9 +34,6 @@ section.news {
 	}
 	time {
 		color: hsl(0, 0%, 50%);
-		display: inline;
-	}
-	address.person {
 		display: inline;
 	}
 	blockquote {
@@ -105,44 +59,6 @@ section.person {
 	margin: $line-height;
 	max-width: 250px;
 	padding: $line-height;
-}
-
-section.paginator {
-	background-color: #1a1a1a;
-	border-bottom: 1px solid #292929;
-	color: #fff;
-	height: 80px;
-	overflow: hidden;
-	padding: 0 $line-height;
-	text-align: center;
-	.page-newer, .page-older {
-		font-family: 'Font Awesome', FontAwesome, none;
-		font-size: (2 * $font-size);
-		line-height: (2 * $line-height);
-		color:#999;
-		margin: ($line-height / 2);
-		padding: ($line-height / 2);
-		vertical-align: middle;
-		display: inline-block;
-		height: 40px;
-		width: 40px;
-		transition:color 2s;
-		text-decoration: none;
-	}
-	.page-newer { float: left; }
-	.page-older { float: right; }
-	.page-newer:hover {
-		color: #eee;
-		border: 0;
-	}
-	.page-older.disabled, .page-newer.disabled,
-	.page-older .disabled:hover, .page-newer .disabled:hover {
-		color:#222;
-		cursor:default;
-	}
-	h1 {
-		display: inline-block;
-	}
 }
 
 section a {
