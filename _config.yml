@@ -20,3 +20,9 @@ sass:
   style: compressed
 gems:
     - jekyll-sitemap
+collections:
+  components:
+    output: false
+  colors:
+    output: false
+  
