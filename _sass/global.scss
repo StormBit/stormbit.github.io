@@ -34,10 +34,10 @@ html, body {
 	}
 	a {
 		display: inline-block;
-		transition: all 25s;
-	}
-	a:hover {
-		background-color: #262626;
+
+		&:hover {
+			background-color: #262626;
+		}
 	}
 	img {
 		border-color: #262626;
