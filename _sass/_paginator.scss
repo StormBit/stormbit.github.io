@@ -1,0 +1,37 @@
+.paginator {
+	background-color: SBGetColor('darkgray-tint-2');
+	border-bottom: 1px solid SBGetColor('darkgray-tint-4');
+	color: SBGetColor('white');
+	height: 80px;
+	overflow: hidden;
+	padding: 0 $line-height;
+	text-align: center;
+	.page-newer, .page-older {
+		font-family: 'Font Awesome', FontAwesome, none;
+		font-size: (2 * $font-size);
+		line-height: (2 * $line-height);
+		color: SBGetColor('gray-tint-3');
+		margin: ($line-height / 2);
+		padding: ($line-height / 2);
+		vertical-align: middle;
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		transition:color 2s;
+		text-decoration: none;
+	}
+	.page-newer { float: left; }
+	.page-older { float: right; }
+	.page-newer:hover {
+		color: SBGetColor('lightgray-tint-4');
+		border: 0;
+	}
+	.page-older.disabled, .page-newer.disabled,
+	.page-older .disabled:hover, .page-newer .disabled:hover {
+		color:SBGetColor('darkgray-tint-3');
+		cursor:default;
+	}
+	h1 {
+		display: inline-block;
+	}
+}

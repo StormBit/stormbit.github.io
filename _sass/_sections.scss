@@ -1,0 +1,72 @@
+// Settings
+@import "settings";
+
+section.lead {
+	background-color: SBGetColor('darkgray-tint-2');
+	color: SBGetColor('white');
+	font-size: 17px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	padding: 20px;
+	p {
+		padding: 0 0 0 $line-height;
+	}
+	h1 {
+		float: left;
+		padding: 0 0 0 5px; /* nasty */
+		width: 60%;
+	}
+	h2 {
+		color: SBGetColor('gray-tint-6');
+		float: right;
+		overflow: hidden;
+		text-align: right;
+		width: 40%;
+	}
+}
+
+section.news {
+	ul {
+		list-style: none;
+	}
+	h1 {
+		display: block;
+	}
+	time {
+		color: SBGetColor('gray-tint-2');
+		display: inline;
+	}
+	blockquote {
+		margin-top: 20px;
+	}
+}
+
+section.forums {
+	background-color: SBGetColor('lightgray-tint-1');
+	border-radius: 5px;
+	float: right;
+	margin: $line-height;
+	padding: $line-height;
+
+	iframe {
+		display: block;
+	}
+}
+
+section.person {
+	background-color: SBGetColor('lightgray-tint-1');
+	border-radius: 5px;
+	margin: $line-height;
+	max-width: 250px;
+	padding: $line-height;
+}
+
+section a {
+	color: SBGetColor('darkgray-tint-1');
+	display: inline-block;
+	transition: all 25s;
+}
+
+section a:hover {
+	color: SBGetColor('darkgray-tint-4');
+}

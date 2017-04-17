@@ -1,0 +1,56 @@
+/* Primatives for the page until it can be styled properly. */
+.component {
+    // background-color: SBGetColor('white');
+    border: 1px solid SBGetColor('lightgray-tint-1');
+    border-radius: 4px;
+    padding: 1em;
+    margin-bottom: 1em;
+
+    div.highlighter-rouge,
+    figure.highlight {
+        margin: 0;
+        padding: 1em;
+    }
+
+    /* Dirty Hack until we can redo main navigation. */
+    /* Withohut this, it will attempt to take over the main nav. */
+    .navbar-fixed-top {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.component__rendered {
+
+
+    &--color {
+    }
+}
+
+/**
+ * Color block for the styleguide. 
+ */
+.guide-colors {
+    display: table;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 1em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+.guide-colors__tile {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 5em;
+    border-radius: 4px;
+    border: 1px solid SBGetColor('darkgray-tint-5')
+}
+
+.guide-colors__name {
+    color: SBGetColor('white');
+    text-shadow: -1px 0 SBGetColor('black'), 0 1px SBGetColor('black'), 1px 0 SBGetColor('black'), 0 -1px SBGetColor('black');
+}
