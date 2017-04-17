@@ -1,4 +1,4 @@
-<div class="component">
+<div class="component {{ 'component--'|append: entry.type }}">
   <div class="component__header">
     <h3 id="guide-{{ entry.title | slugify }}" class="component__title">{{ entry.title }}</h3>
       {% if entry.description %}<p><strong>Description:</strong> {{ entry.description }}</p>{% endif %}
@@ -10,10 +10,12 @@
     <div class="component__rendered">
       {{ entry.content }}
     </div>
+    {% if entry.type != "colors" %}
     <div class="component__code">
       {% highlight html %}
         {{ entry.content }}
       {% endhighlight %}
     </div>
+    {% endif %}
   </div>
 </div>

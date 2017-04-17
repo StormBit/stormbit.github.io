@@ -1,11 +1,13 @@
 // Settings
 @import "settings";
-
+@import "colors";
+@import "sections";
 @import "paginator";
+@import "styleguide";
 
 html, body {
 	background: $background;
-	color: hsl(0, 0%, 20%);
+	color: SBGetColor('darkgray-tint-5');
 	font-family: $font-family;
 	font-size: $font-size;
 	height: 100%;
@@ -15,14 +17,14 @@ html, body {
 
 .navbar-inverse {
 	background-image: none;
-	background-color: #191919;
+	background-color: SBGetColor('darkgray-tint-1');
 }
 
 .navbar {
-	background-color: #191919;
-	border-bottom: 1px solid #262626;
-	color: rgba(171, 171, 171, 0.5);
-	text-shadow: 0 0 0 #ABABAB;
+	background-color: SBGetColor('darkgray-tint-1');
+	border-bottom: 1px solid SBGetColor('darkgray-tint-4');
+	color: SBGetColor('gray-tint-5'); // Opacity 80
+	text-shadow: 0 0 0 SBGetColor('gray-tint-6');
 	text-transform: uppercase;
 	width: 100%;
 	.container {
@@ -38,16 +40,16 @@ html, body {
 		display: inline-block;
 
 		&:hover {
-			background-color: #262626;
+			background-color: SBGetColor('darkgray-tint-4');
 		}
 	}
 	img {
-		border-color: #262626;
+		border-color: SBGetColor('darkgray-tint-4');
 		border-style: solid;
 		border-width: 0 1px;
 	}
 	li {
-		border-right: 1px solid #262626;
+		border-right: 1px solid SBGetColor('darkgray-tint-4');
 		padding: 0;
 		text-align: center;
 	}
@@ -59,9 +61,9 @@ html, body {
 }
 
 #page {
-	background-color: hsl(0, 0%, 95%);
+	background-color: SBGetColor('lightgray-tint-5');
 	background-position: 0 10px;
-	box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 10px 4px SBGetColor('black');
 	margin: 3em auto 0 auto;
 	min-height: 100%;
 	padding: 0;
@@ -75,8 +77,8 @@ html, body {
 }
 
 footer {
-	background-color: #191919;
-	color: hsl(0, 0%, 60%);
+	background-color: SBGetColor('darkgray-tint-1');
+	color: SBGetColor('gray-tint-3');
 	font-size: round($font-size * 0.9);
 	margin: 0 auto;
 	padding: $line-height;
@@ -88,13 +90,14 @@ footer {
 	h4 { text-align: center; }
 	li { text-align: center; }
 	ul { width: 50%; margin: auto; }
-	a, a:hover { color: #707070 }
+	a, a:hover { color: SBGetColor('gray-tint-1') }
 }
 
+
 .warning {
-	background: #FFB400;
+	background: SBGetColor('orange');
 	border-radius: 4px;
-	color: black;
+	color: SBGetColor('black');;
 	display: block;
 	font-family: $font-family;
 	font-size: 1.1em;
@@ -120,10 +123,10 @@ footer {
 }
 
 .chat-now {
-	background-color: hsl(0, 0%, 70%);
+	background-color: SBGetColor('gray-tint-6');
 	border: none;
 	border-radius: 4px;
-	color: hsl(0, 0%, 0%);
+	color: SBGetColor('black');
 	float: right;
 	font-family: $font-family;
 	margin-left: 20px;
@@ -140,7 +143,7 @@ footer {
 	}
 
 	&:hover, &:active {
-		background-color: hsl(0, 0%, 85%);
+		background-color: SBGetColor('lightgray-tint-2');
 		border: none;
 	}
 
@@ -153,7 +156,7 @@ footer {
 .chat-eventually {
 	border: none;
 	clear: right;
-	color: hsl(0, 0%, 70%);
+	color: SBGetColor('gray-tint-6');
 	float: right;
 	font-size: 0.8em;
 	margin-left: 20px;
@@ -163,7 +166,7 @@ footer {
 
 	&:hover, &:active {
 		border: none;
-		color: hsl(0, 0%, 90%);
+		color: SBGetColor('lightgray-tint-3');
 	}
 }
 

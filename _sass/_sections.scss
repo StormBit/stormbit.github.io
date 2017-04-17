@@ -2,8 +2,8 @@
 @import "settings";
 
 section.lead {
-	background-color: hsl(0, 0%, 10%);
-	color: white;
+	background-color: SBGetColor('darkgray-tint-2');
+	color: SBGetColor('white');
 	font-size: 17px;
 	margin-bottom: 20px;
 	overflow: hidden;
@@ -17,7 +17,7 @@ section.lead {
 		width: 60%;
 	}
 	h2 {
-		color: hsl(0, 0%, 70%);
+		color: SBGetColor('gray-tint-6');
 		float: right;
 		overflow: hidden;
 		text-align: right;
@@ -33,7 +33,7 @@ section.news {
 		display: block;
 	}
 	time {
-		color: hsl(0, 0%, 50%);
+		color: SBGetColor('gray-tint-2');
 		display: inline;
 	}
 	blockquote {
@@ -42,7 +42,7 @@ section.news {
 }
 
 section.forums {
-	background-color: hsl(0, 0%, 80%);
+	background-color: SBGetColor('lightgray-tint-1');
 	border-radius: 5px;
 	float: right;
 	margin: $line-height;
@@ -54,7 +54,7 @@ section.forums {
 }
 
 section.person {
-	background-color: hsl(0, 0%, 80%);
+	background-color: SBGetColor('lightgray-tint-1');
 	border-radius: 5px;
 	margin: $line-height;
 	max-width: 250px;
@@ -62,11 +62,11 @@ section.person {
 }
 
 section a {
-	color: #191919;
+	color: SBGetColor('darkgray-tint-1');
 	display: inline-block;
 	transition: all 25s;
 }
 
 section a:hover {
-	color: #262626;
+	color: SBGetColor('darkgray-tint-4');
 }

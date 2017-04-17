@@ -1,0 +1,47 @@
+$stormbit-palette: () !default;
+$stormbit-palette: map-merge((
+
+    'transparent': transparent,
+    'inherit': inherit,
+
+    'black': #000000,
+    'white': #FFFFFF,
+    'orange': #FFB400,
+
+    // Grays still require a _lot_ of dedupe and cleanup.
+    'darkgray-tint-1': #191919, // Navigation background
+    'darkgray-tint-2': #1A1A1A,
+    'darkgray-tint-3': #222222,
+    'darkgray-tint-4': #262626, // Navigation separator
+    'darkgray-tint-5': #333333,
+
+    // Grays still require a _lot_ of dedupe and cleanup.
+    'gray-tint-1': #707070,
+    'gray-tint-2': #808080,
+    'gray-tint-3': #999999,
+    'gray-tint-4': #9D9D9D,
+    'gray-tint-5': #ABABAB,
+    'gray-tint-6': #B3B3B3,
+
+    // Grays still require a _lot_ of dedupe and cleanup.
+    'lightgray-tint-1': #CCCCCC,
+    'lightgray-tint-2': #D9D9D9,
+    'lightgray-tint-3': #E6E6E6,
+    'lightgray-tint-4': #EEEEEE,
+    'lightgray-tint-5': #F2F2F2, // Background color
+
+), $stormbit-palette);
+
+$sb-has-output-color-classes: false !default;
+@if ($sb-has-output-color-classes == false) {
+    @each $name, $csscolor in $stormbit-palette {
+        #{'.sb-palette-'+$name} {
+            background-color: $csscolor;
+        }
+    }
+    $sb-has-output-color-classes: true;
+}
+
+@function SBGetColor($key: 'primary') {
+  @return map-get($stormbit-palette, $key);
+}

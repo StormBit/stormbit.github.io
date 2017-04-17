@@ -4,34 +4,25 @@ title: styleguide
 layout: default
 ---
 
-<style>
-    /* Primatives for the page until it can be styled properly. */
-    .component {
-        max-width: 1024px;
-        padding: 10px;
-        margin-bottom: 5px;
-    }
+<div id="main" class="inner wrap" role="main">
 
-    /* Help discern between the page and contained components. */
-    .component__rendered {
-        border: 1px solid red;
-    }
+<div markdown="1">
+# StormBit Styleguide #
 
-    /* Dirty Hack until we can redo main navigation. */
-    /* Withohut this, it will attempt to take over the main nav. */
-    .component .navbar-fixed-top {
-        position: relative;
-        z-index: 1;
-    }
-</style>
+A collection of the colors, typography, visual elements and components that
+make up the StormBit websites and brand.
+</div>
 
-{% assign componentsByType = site.components | group_by:"type" %}
-<div id="main" class="wrap" role="main">
-    <h1>StormBit Styleguide</h1>
+    <h2 id="colors" class="cf">Colors</h2>
+    {% for entry in site.colors %}
+        {% include component.html component_type="color" %}
+    {% endfor %}
+
+    {% assign componentsByType = site.components|group_by:"type" %}
     {% for type in componentsByType %}
     <h2 id="guide-{{ type.name }}" class="cf">{{ type.name | capitalize }}</h2>
     {% for entry in type.items %}
-    {% include component.html %}
+        {% include component.html component_type=type.name %}
     {% endfor %}
     {% endfor %}
 </div>
