@@ -7,14 +7,14 @@ layout: default
 		<div class="container">
 		<h1>Welcome to StormBit</h1>
 		<a href="http://webchat.{{ site.url }}" class="chat-now">Chat Now</a>
-		<a href="{{ site.baseurl }}help/connect.html" class="chat-eventually">or connect manually</a>
+		<a href="/help/connect.html" class="chat-eventually">or connect manually</a>
 		</div>
 		<p>{{ site.description }}
 	</section>
 {% elsif paginator.page > 1 %}
 	<section class="paginator top">
 		{% if paginator.previous_page %}
-		<a href="{{ site.baseurl }}{{ paginator.previous_page_path | remove_first: '/' | remove: 'index.html' }}" class="page-newer fa-arrow-left"></a>
+		<a href="/{{ paginator.previous_page_path | remove_first: '/' | remove: 'index.html' }}" class="page-newer fa-arrow-left"></a>
 		{% else %}
 			<a class="page-newer fa-arrow-left disabled"></a>
 		{% endif %}
