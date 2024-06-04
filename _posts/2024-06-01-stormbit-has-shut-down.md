@@ -24,4 +24,4 @@ And so we arrive at the final pages of this chapter, the stage known as adjourni
 
 Thanks for playing.
 
-- StormBit Team, 2024
+— StormBit Team, 2024
