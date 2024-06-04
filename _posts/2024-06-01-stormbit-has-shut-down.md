@@ -8,9 +8,7 @@ published: true
 
 **As of the 1st of June 2024, the StormBit IRC Network has shut down**.
 
-There were a few reasons behind our decision, the largest being that the landscape of the internet today is radically different: In the heyday of IRC, there weren’t many spaces a community could call home. Today platforms like Telegram, Slack and Discord host large communities at low expense without any to run or operate any servers.
-
-Other options on the table, such as merging or moving with another network, but we agreed that closing was the right fit for us.
+There were a few reasons behind our decision, the largest being that the landscape of the internet today is radically different: In the heyday of IRC, there weren’t many spaces a community could call home. Today platforms like Telegram, Slack and Discord host large communities at low expense without any need to run or operate servers.
 
 While it’s not impossible that one day another IRC server will appear on irc.stormbit.net, the network we built has closed-down and this chapter has now come to an end.
 
@@ -20,7 +18,7 @@ The first server went up in late 2010, and in 2011 we opened our doors to the pu
 
 Things didn’t go smoothly the entire time, but as we went through each stage of [Tuckman’s model of group development](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development) we all grew a little richer.
 
-We made noteworthy contributions over the years with some of our bots, with [BukkitIRCd](https://dev.bukkit.org/projects/bukkitircd) and with our time in [the Janus project](https://irc.wiki/Janus).
+We made several noteworthy contributions over the years including (but not limited to!) introducing pronouns support to IRC, unleashing [BukkitIRCd](https://dev.bukkit.org/projects/bukkitircd) and with our time in [the Janus project](https://irc.wiki/Janus).
 
 And so we arrive at the final pages of this chapter, the stage known as adjourning. We’re proud and thankful of what we achieved, of the people we brought together and of having called a slice of internet our own.  And reader, of course, we’re thankful for you.
 
